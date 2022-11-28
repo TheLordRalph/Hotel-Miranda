@@ -1,0 +1,117 @@
+.header {
+    background-color: $colorPrincipal;
+    .header__bar {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        padding: 0%;
+        height: 70px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+        justify-content: space-between;
+        .header__bar__menuLogo {
+            width: 1.2rem;
+            height: 0.8rem;
+            margin: 0 20px;
+        }
+        .header__bar__menu {
+            display: flex;
+            position: fixed;
+            top: 70px;
+            width: 100%;
+            background-color: white;
+            z-index: -1;
+            flex-wrap: wrap;
+            padding: 32px 0 0 21px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+            .header__bar__menu__enlace {
+                width: 100%;
+                margin-bottom: 24px;
+                color: black;
+                text-decoration: none;
+                font-family: $fontFamilyPrincipal;
+                font-weight: 600;
+            }
+        }
+        .header__bar__user {
+            margin-left: 5%;
+        }
+        .header__bar__buscador {
+            margin: 0 5% 0 5%;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 0vw 0 0;
+    font-family: $fontFamilyPrincipal;
+    width: 50%;
+    .logo__logo {
+        box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+        padding: 10px;
+        font-size: 25px;
+        text-align: center;
+        width: 46px;
+    }
+    .logo__titulo {
+        margin-left: 5%;
+        font-size: 17px;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.logo--footer {
+    width: 100%;
+    margin-bottom: 57px;
+    .logo__logo--footer {
+        font-size: 40px;
+    width: 64px;
+    background-color: $colorSecundario;
+    color: white;
+    }
+    .logo__titulo--footer {
+        font-size: 22px;
+        margin-left: 5%;
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+    
+    .header {
+        height: 100px;
+        .header__bar {
+            height: 120px;
+            width: 70%;
+            margin: 0 auto;
+            position: relative;
+            top: 40px;
+            .header__bar__menuLogo {
+                display: none;
+            }
+            .header__bar__menu {
+                display: block;
+                .header__bar__menu__enlace {
+
+                }
+            }
+            .header__bar__user {
+            }
+            .header__bar__buscador {
+            }
+        }
+    }
+    .logo {
+        .logo__logo {
+
+        }
+        .logo__titulo {
+
+        }
+    }
+}

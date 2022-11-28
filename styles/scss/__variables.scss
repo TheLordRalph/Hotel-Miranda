@@ -1,0 +1,19 @@
+$colorPrincipal: #222222;
+$colorSecundario: #BEAD8E;
+
+$fontFamilyPrincipal: 'Archivo', sans-serif;
+$fontFamilySecundaria: 'Old Standard TT', serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+}
+
+.displayNone {
+    display: none !important;
+}

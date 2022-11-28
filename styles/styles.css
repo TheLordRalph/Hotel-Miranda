@@ -1,1 +1,216 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.header {
+  background-color: #222222;
+}
+.header .header__bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  padding: 0%;
+  height: 70px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  justify-content: space-between;
+}
+.header .header__bar .header__bar__menuLogo {
+  width: 1.2rem;
+  height: 0.8rem;
+  margin: 0 20px;
+}
+.header .header__bar .header__bar__menu {
+  display: flex;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  background-color: white;
+  z-index: -1;
+  flex-wrap: wrap;
+  padding: 32px 0 0 21px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
+}
+.header .header__bar .header__bar__menu .header__bar__menu__enlace {
+  width: 100%;
+  margin-bottom: 24px;
+  color: black;
+  text-decoration: none;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+}
+.header .header__bar .header__bar__user {
+  margin-left: 5%;
+}
+.header .header__bar .header__bar__buscador {
+  margin: 0 5% 0 5%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0 0vw 0 0;
+  font-family: "Archivo", sans-serif;
+  width: 50%;
+}
+.logo .logo__logo {
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  width: 46px;
+}
+.logo .logo__titulo {
+  margin-left: 5%;
+  font-size: 17px;
+}
+.logo .logo__titulo span {
+  font-weight: 400;
+}
+
+.logo--footer {
+  width: 100%;
+  margin-bottom: 57px;
+}
+.logo--footer .logo__logo--footer {
+  font-size: 40px;
+  width: 64px;
+  background-color: #BEAD8E;
+  color: white;
+}
+.logo--footer .logo__titulo--footer {
+  font-size: 22px;
+  margin-left: 5%;
+}
+
+@media (min-width: 1000px) {
+  .header {
+    height: 100px;
+  }
+  .header .header__bar {
+    height: 120px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+  }
+  .header .header__bar .header__bar__menuLogo {
+    display: none;
+  }
+  .header .header__bar .header__bar__menu {
+    display: block;
+  }
+}
+.footer {
+  margin-top: 32px;
+}
+.footer .footer__info {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.footer .footer__info .footer__info__description {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 32px;
+}
+.footer .footer__titulos {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.footer .footer__services {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.footer .footer__services .footer__services__servicios {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .footer__services .footer__services__servicios .footer__services__servicios__servicio {
+  text-decoration: none;
+  color: #777;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 24px 0;
+}
+.footer .footer__contactUs {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer .footer__contactUs .footer__contactUs__contacto {
+  display: flex;
+  margin-bottom: 50px;
+}
+.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__img {
+  width: 40px;
+  height: 40px;
+}
+.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__informacion {
+  margin-left: 21px;
+}
+.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__informacion .footer__contactUs__contacto__informacion__titulo {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222222;
+  text-decoration: none;
+}
+.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__informacion .footer__contactUs__contacto__informacion__descripcion {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+  text-decoration: none;
+}
+.footer .footer__terms {
+  background-color: #F8F8F8;
+  padding: 16px 20px;
+}
+.footer .footer__terms .footer__terms__enlace, .footer .footer__terms .footer__terms__enlace a {
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #222222;
+  margin-top: 24px;
+}
+
+.rs {
+  display: flex;
+}
+.rs .rs__logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #F8F8F8;
+  margin-right: 10px;
+}
+.rs .rs__logo img {
+  margin: 20% 0;
+}
+.rs .rs__logo--color {
+  background-color: #BEAD8E;
+}/*# sourceMappingURL=styles.css.map */
