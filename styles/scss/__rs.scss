@@ -1,0 +1,17 @@
+.rs {
+    display: flex;
+    .rs__logo {
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        background-color: #F8F8F8;
+        margin-right: 10px;
+        img {
+            margin: 20% 0;
+        }
+    }
+    .rs__logo--color {
+        background-color: $colorSecundario;
+    }
+}

@@ -1,0 +1,36 @@
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 0vw 0 0;
+    font-family: $fontFamilyPrincipal;
+    width: 50%;
+    .logo__logo {
+        box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+        padding: 10px;
+        font-size: 25px;
+        text-align: center;
+        width: 46px;
+    }
+    .logo__titulo {
+        margin-left: 5%;
+        font-size: 17px;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.logo--footer {
+    width: 100%;
+    margin-bottom: 57px;
+    .logo__logo--footer {
+        font-size: 40px;
+    width: 64px;
+    background-color: $colorSecundario;
+    color: white;
+    }
+    .logo__titulo--footer {
+        font-size: 22px;
+        margin-left: 5%;
+    }
+}

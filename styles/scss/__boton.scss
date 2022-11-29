@@ -1,0 +1,30 @@
+.boton {
+    background-color: $colorSecundario;
+    width: 217px;
+    height: 60px;
+    padding: 22px 45px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    .boton__titulo {
+        color: white;
+        font-family: $fontFamilyPrincipal;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15.23px;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+.boton--transparent {
+    background: none;
+    border: 2px solid #FFFFFF33;
+}
+
+.boton--big {
+    width: 250px;
+    padding: 22px 24px;
+}

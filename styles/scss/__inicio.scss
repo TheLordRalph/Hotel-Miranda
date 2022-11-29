@@ -1,0 +1,64 @@
+.inicio {
+    background-color: $colorTerciario;
+    padding: 75px 20px;
+    color: white;
+    .inicio__titulo {
+        font-family: $fontFamilySecundaria;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        margin-bottom: 40px;
+    }
+    .inicio__titulo--black {
+        color: #111111;
+        margin-bottom: 16px;
+        text-align: center;
+        width: fit-content;
+    }
+    .inicio__titulo--center {
+        width: 100%;
+        text-align: center;
+    }
+    .inicio__titulo--marginB {
+        margin-bottom: 16px;
+    }
+    .inicio__descripcion {
+        font-family: $fontFamilyPrincipal;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 2.8px;
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .inicio__descripcion--black {
+        color: #777777;
+        margin-bottom: 32px;
+    }
+    .inicio__descripcion--center {
+        width: 100%;
+        text-align: center;
+    }
+    .inicio__texto {
+        font-family: $fontFamilyPrincipal;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #777777;
+        margin-bottom: 24px;
+        width: 80%;
+    }
+    .inicio__texto--light {
+        color: #C2C2C2;
+        width: 100%;
+    }
+}
+
+.inicio--bgNull {
+    background: none;
+    padding: 0px 20px;
+    padding-top: 38px;
+}
