@@ -15,7 +15,6 @@
     .inicio__titulo--black {
         color: #111111;
         margin-bottom: 16px;
-        text-align: center;
         width: fit-content;
     }
     .inicio__titulo--center {
@@ -63,4 +62,8 @@
     background: none;
     padding: 0px 20px;
     padding-top: 38px;
+}
+
+.inicio--paddTopNone {
+    padding-top: 0;
 }

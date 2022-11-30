@@ -10,6 +10,9 @@
         display: flex;
         justify-content: space-between;
         margin: auto;
+        img {
+            width: 16px;
+        }
     }
     .rooms__card {
         .rooms__card__img {
