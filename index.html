@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <title>Hotel Miranda</title>
 </head>
 
@@ -26,7 +26,7 @@
         <h1 class="logo__logo">H</h1>
         <h1 class="logo__titulo">HOTEL<br><span>MIRANDA</span></h1>
       </div>
-      <div class="header__bar__menu displayNone">
+      <div id="menu" class="header__bar__menu displayNone">
         <a href="/about.html" class="header__bar__menu__enlace">About Us</a>
         <a href="/rooms.html" class="header__bar__menu__enlace">Rooms</a>
         <a href="/offers.html" class="header__bar__menu__enlace">Offers</a>
@@ -55,7 +55,7 @@
       <input class="disponible__date__input" type="text" name="Arrival Date" id="" placeholder="24th march 2020">
     </div>
 
-    <h5 class="disponible__titulo">LeDeparture Date</h5>
+    <h5 class="disponible__titulo">Departure Date</h5>
     <div class="disponible__date">
       <img class="disponible__date__img" src="./resources/Iconos/date.png" alt="date">
       <input class="disponible__date__input" type="text" name="LeDeparture Date" id="" placeholder="30th march 2020">
@@ -95,8 +95,8 @@
         <img class="abaout__cards__card__img" src="./resources/Imagenes/foto_02.jpg" alt="">
         <div class="abaout__cards__card__descripcion abaout__cards__card__descripcion--black">
           <img class="abaout__cards__card__descripcion__img" src="./resources/Iconos/calendar.png" alt="">
-          <h1 class="abaout__cards__card__descripcion__titulo">Luxury Room</h1>
-          <p class="abaout__cards__card__descripcion__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing
+          <h1 class="abaout__cards__card__descripcion__titulo abaout__cards__card__descripcion__titulo--white">Luxury Room</h1>
+          <p class="abaout__cards__card__descripcion__descripcion abaout__cards__card__descripcion__descripcion--white">Lorem ipsum dolor sit amet consectetur adipisicing
             elit.</p>
         </div>
       </div>
@@ -117,18 +117,72 @@
       <img src="./resources/Iconos/caracteristica_06.png" alt="">
       <img src="./resources/Iconos/caracteristica_07.png" alt="">
     </div>
-    <div class="swiper">
+
+    <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <img class="rooms__card__img" src="./resources/Imagenes/room_01.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <img class="rooms__card__img" src="./resources/Imagenes/room_02.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <img class="rooms__card__img" src="./resources/Imagenes/room_03.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <img class="rooms__card__img" src="./resources/Imagenes/room_04.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <img class="rooms__card__img" src="./resources/Imagenes/room_05.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <img class="rooms__card__img" src="./resources/Imagenes/room_06.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="swiper-pagination"></div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <div class="swiper-scrollbar"></div>
+      <div class="swiper-button-next swiper-button-next--custom"></div>
+      <div class="swiper-button-prev swiper-button-prev--custom"></div>
     </div>
   </section>
 
@@ -141,14 +195,81 @@
         quae ratione expedita excepturi quo voluptatibus error dolor aut reprehenderit saepe impedit, omnis quis maxime
         quod. Minus, eum incidunt.
       </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <iframe
+      class="video__iframe"
+      width="100%"
+      height="270"
+      src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?start=25&end=75"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
       <div class="boton">
         <h3 class="boton__titulo">Book Now</h3>
       </div>
     </section>
+  </section>
+
+  <section class="facilities">
+    <section class="inicio inicio--bgNull">
+      <h5 class="inicio__descripcion inicio__descripcion--black inicio__descripcion--center">FACILITIES</h5>
+      <h1 class="inicio__titulo inicio__titulo--black inicio__titulo--center">Core Features</h1>
+    </section>
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="facilities__facility">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_01.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">01</h1>
+            <h1 class="facilities__facility__titulo">Have High Rating</h1>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="facilities__facility">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_02.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">02</h1>
+            <h1 class="facilities__facility__titulo">Quiet Hours</h1>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+          <div class="swiper-slide">
+          <div class="facilities__facility">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_03.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">03</h1>
+            <h1 class="facilities__facility__titulo">Best LOcation</h1>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+          <div class="swiper-slide">
+          <div class="facilities__facility">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_04.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">04</h1>
+            <h1 class="facilities__facility__titulo">Free Candellation</h1>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+          <div class="swiper-slide">
+          <div class="facilities__facility">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_05.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">05</h1>
+            <h1 class="facilities__facility__titulo">Payment Option</h1>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+          <div class="swiper-slide">
+          <div class="facilities__facility">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_06.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">06</h1>
+            <h1 class="facilities__facility__titulo">Special Offers</h1>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
   </section>
 
   <footer class="footer">
@@ -233,7 +354,8 @@
     </div>
   </footer>
 
-  <script src="scripts/swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./scripts/motor.js"></script>
 </body>
 
 </html>

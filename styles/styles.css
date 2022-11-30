@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #222222;
 }
 
 body {
@@ -124,6 +125,7 @@ body {
   line-height: 60px;
   letter-spacing: -1.2px;
   margin-bottom: 40px;
+  color: white;
 }
 .inicio .inicio__titulo--black {
   color: #111111;
@@ -148,6 +150,7 @@ body {
   letter-spacing: 2.8px;
   width: 60%;
   margin-bottom: 40px;
+  color: white;
 }
 .inicio .inicio__descripcion--black {
   color: #777777;
@@ -223,6 +226,7 @@ body {
   font-size: 16px;
   line-height: 18.75px;
   margin-bottom: 20px;
+  color: white;
 }
 .disponible .disponible__date {
   border-bottom: 2px solid #BEAD8E;
@@ -248,10 +252,7 @@ body {
 }
 
 .about .about__fondo {
-  background-image: url(../resources/Imagenes/background_01.jpg);
-  background-position-x: 53%;
-  background-position-y: 45%;
-  background-size: 146%;
+  background-image: url(../resources/Imagenes/background_01.png);
   background-repeat: no-repeat;
   height: 610px;
   position: absolute;
@@ -296,6 +297,9 @@ body {
   letter-spacing: -0.9px;
   margin-bottom: 21px;
 }
+.about .about__cards .abaout__cards__card .abaout__cards__card__descripcion .abaout__cards__card__descripcion__titulo--white {
+  color: white;
+}
 .about .about__cards .abaout__cards__card .abaout__cards__card__descripcion .abaout__cards__card__descripcion__descripcion {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
@@ -304,9 +308,158 @@ body {
   line-height: 22px;
   margin: 0 35px 38px 35px;
 }
+.about .about__cards .abaout__cards__card .abaout__cards__card__descripcion .abaout__cards__card__descripcion__descripcion--white {
+  color: white;
+}
 .about .about__cards .abaout__cards__card .abaout__cards__card__descripcion--black {
   background-color: #222222;
   color: white;
+}
+
+.rooms .rooms__caracteristicas {
+  height: 40px;
+  width: 50%;
+  position: relative;
+  top: 20px;
+  background-color: white;
+  z-index: 5;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.rooms .rooms__card .rooms__card__img {
+  height: 65vw;
+}
+.rooms .rooms__card .rooms__card__info {
+  width: 89%;
+  margin: auto;
+  position: relative;
+  bottom: 15px;
+  background-color: white;
+  padding: 19px 24px;
+}
+.rooms .rooms__card .rooms__card__info .rooms__card__info__titulo {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  margin-bottom: 12px;
+}
+.rooms .rooms__card .rooms__card__info .rooms__card__info__descripcion {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 12px;
+}
+.rooms .rooms__card .rooms__card__info .rooms__card__info__precio {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #BEAD8E;
+}
+.rooms .rooms__card .rooms__card__info .rooms__card__info__precio span {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 43px;
+  color: #BEAD8E;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-next--custom, .swiper-button-prev--custom {
+  top: 25%;
+  height: 8.3vw;
+  width: 8.3vw;
+  --swiper-navigation-size: 10px;
+  color: black;
+  background-color: white;
+}
+
+.swiper-button-next--custom {
+  color: white;
+  background-color: #BEAD8E;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #BEAD8E;
+}
+
+.video .video__iframe {
+  margin-bottom: 36px;
+}
+
+.facilities .facilities__facility {
+  width: 375px;
+  height: 370px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.facilities .facilities__facility .facilities__facility__numero {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 130px;
+  opacity: 4%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 32px;
+}
+.facilities .facilities__facility .facilities__facility__img {
+  width: 70px;
+  height: 70px;
+  margin-left: 38px;
+  margin: 81px 0 38px 38px;
+}
+.facilities .facilities__facility .facilities__facility__titulo {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9;
+  margin-bottom: 28px;
+  text-align: start;
+  margin-left: 35px;
+}
+.facilities .facilities__facility .facilities__facility__description {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: start;
+  color: #777777;
+  margin: 0 87px 43px 38px;
 }
 
 .rs {
