@@ -1,11 +1,10 @@
 .menu {
-    margin-top: 60px;
+    margin: 60px 0;
     .menu__img {
         width: 115px;
         height: 115px;
-        margin-left: 100%;
-        position: relative;
-        right: 90px;
+        position: absolute;
+        right: -25px;
     }
     .menu__comida {
         display: flex;

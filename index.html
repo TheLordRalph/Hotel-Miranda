@@ -13,27 +13,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/styles.css">
   <title>Hotel Miranda</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__bar">
-      <img class="header__bar__menuLogo" src="resources/Iconos/menu.png" alt="">
+    <div id="header" class="header__bar">
+      <div id="burger" class="header-burger">
+        <div id="burgerBar" class="bar"></div>
+      </div>
       <div class="logo">
         <h1 class="logo__logo">H</h1>
         <h1 class="logo__titulo">HOTEL<br><span>MIRANDA</span></h1>
       </div>
-      <div id="menu" class="header__bar__menu displayNone">
+      <div id="menuEnlaces" class="header__bar__menu displayNone">
         <a href="/about.html" class="header__bar__menu__enlace">About Us</a>
         <a href="/rooms.html" class="header__bar__menu__enlace">Rooms</a>
         <a href="/offers.html" class="header__bar__menu__enlace">Offers</a>
         <a href="/contact.html" class="header__bar__menu__enlace">Contact</a>
       </div>
-      <img class="header__bar__user" src="resources/Iconos/user.png" alt="">
-      <img class="header__bar__buscador" src="resources/Iconos/buscar.png" alt="">
+      <div class="header__container">
+        <img class="header__user" src="resources/Iconos/user.png" alt="">
+        <img class="header__buscador" src="resources/Iconos/buscar.png" alt="">
+      </div>
     </div>
   </header>
 
@@ -95,8 +99,10 @@
         <img class="abaout__cards__card__img" src="./resources/Imagenes/foto_02.jpg" alt="">
         <div class="abaout__cards__card__descripcion abaout__cards__card__descripcion--black">
           <img class="abaout__cards__card__descripcion__img" src="./resources/Iconos/calendar.png" alt="">
-          <h1 class="abaout__cards__card__descripcion__titulo abaout__cards__card__descripcion__titulo--white">Luxury Room</h1>
-          <p class="abaout__cards__card__descripcion__descripcion abaout__cards__card__descripcion__descripcion--white">Lorem ipsum dolor sit amet consectetur adipisicing
+          <h1 class="abaout__cards__card__descripcion__titulo abaout__cards__card__descripcion__titulo--white">Luxury
+            Room</h1>
+          <p class="abaout__cards__card__descripcion__descripcion abaout__cards__card__descripcion__descripcion--white">
+            Lorem ipsum dolor sit amet consectetur adipisicing
             elit.</p>
         </div>
       </div>
@@ -125,7 +131,8 @@
             <img class="rooms__card__img" src="./resources/Imagenes/room_01.jpg" alt="Habitacion del Hotel">
             <div class="rooms__card__info">
               <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
-              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
               <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
             </div>
           </div>
@@ -144,7 +151,8 @@
             <img class="rooms__card__img" src="./resources/Imagenes/room_02.jpg" alt="Habitacion del Hotel">
             <div class="rooms__card__info">
               <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
-              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
               <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
             </div>
           </div>
@@ -163,7 +171,8 @@
             <img class="rooms__card__img" src="./resources/Imagenes/room_03.jpg" alt="Habitacion del Hotel">
             <div class="rooms__card__info">
               <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
-              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
               <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
             </div>
           </div>
@@ -182,7 +191,8 @@
             <img class="rooms__card__img" src="./resources/Imagenes/room_04.jpg" alt="Habitacion del Hotel">
             <div class="rooms__card__info">
               <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
-              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
               <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
             </div>
           </div>
@@ -201,7 +211,8 @@
             <img class="rooms__card__img" src="./resources/Imagenes/room_05.jpg" alt="Habitacion del Hotel">
             <div class="rooms__card__info">
               <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
-              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
               <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
             </div>
           </div>
@@ -220,7 +231,8 @@
             <img class="rooms__card__img" src="./resources/Imagenes/room_06.jpg" alt="Habitacion del Hotel">
             <div class="rooms__card__info">
               <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
-              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
               <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
             </div>
           </div>
@@ -240,16 +252,10 @@
         quae ratione expedita excepturi quo voluptatibus error dolor aut reprehenderit saepe impedit, omnis quis maxime
         quod. Minus, eum incidunt.
       </p>
-      <iframe
-      class="video__iframe"
-      width="100%"
-      height="270"
-      src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?start=25&end=75"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+      <iframe class="video__iframe" width="100%" height="270"
+        src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?start=25&end=75" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
       <div class="boton">
         <h3 class="boton__titulo">Book Now</h3>
       </div>
@@ -268,7 +274,8 @@
             <img class="facilities__facility__img" src="./resources/Iconos/facilities_01.png" alt="High Rating">
             <h1 class="facilities__facility__numero">01</h1>
             <h1 class="facilities__facility__titulo">Have High Rating</h1>
-            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
           </div>
         </div>
         <div class="swiper-slide">
@@ -276,50 +283,55 @@
             <img class="facilities__facility__img" src="./resources/Iconos/facilities_02.png" alt="High Rating">
             <h1 class="facilities__facility__numero">02</h1>
             <h1 class="facilities__facility__titulo">Quiet Hours</h1>
-            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
           </div>
         </div>
-          <div class="swiper-slide">
+        <div class="swiper-slide">
           <div class="facilities__facility">
             <img class="facilities__facility__img" src="./resources/Iconos/facilities_03.png" alt="High Rating">
             <h1 class="facilities__facility__numero">03</h1>
             <h1 class="facilities__facility__titulo">Best LOcation</h1>
-            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
           </div>
         </div>
-          <div class="swiper-slide">
+        <div class="swiper-slide">
           <div class="facilities__facility">
             <img class="facilities__facility__img" src="./resources/Iconos/facilities_04.png" alt="High Rating">
             <h1 class="facilities__facility__numero">04</h1>
             <h1 class="facilities__facility__titulo">Free Candellation</h1>
-            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
           </div>
         </div>
-          <div class="swiper-slide">
+        <div class="swiper-slide">
           <div class="facilities__facility">
             <img class="facilities__facility__img" src="./resources/Iconos/facilities_05.png" alt="High Rating">
             <h1 class="facilities__facility__numero">05</h1>
             <h1 class="facilities__facility__titulo">Payment Option</h1>
-            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
           </div>
         </div>
-          <div class="swiper-slide">
+        <div class="swiper-slide">
           <div class="facilities__facility">
             <img class="facilities__facility__img" src="./resources/Iconos/facilities_06.png" alt="High Rating">
             <h1 class="facilities__facility__numero">06</h1>
             <h1 class="facilities__facility__titulo">Special Offers</h1>
-            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam expedita tenetur enim eius vero at iure.</p>
+            <p class="facilities__facility__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
           </div>
         </div>
-        
+
       </div>
       <div class="swiper-pagination"></div>
     </div>
   </section>
-  
+
   <section class="menu">
-    <img  class="menu__img" src="./resources/Iconos/food.png" alt="icono rosquilla">
-    <section class="inicio inicio--bgNull inicio--paddTopNone">
+    <img class="menu__img" src="./resources/Iconos/food.png" alt="icono rosquilla">
+    <section class="inicio inicio--bgNull inicio--paddTopMenu">
       <h5 class="inicio__descripcion inicio__descripcion--black">MENU</h5>
       <h1 class="inicio__titulo inicio__titulo--black">Our Foods Menu</h1>
     </section>
@@ -330,44 +342,24 @@
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
           <div class="menu__comida">
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
           <div class="menu__comida">
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide--wrap">
-          <div class="menu__comida">
-            <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
-            <div class="menu__comida__info">
-              <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
-            </div>
-          </div>
-          <div class="menu__comida">
-            <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
-            <div class="menu__comida__info">
-              <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
-            </div>
-          </div>
-          <div class="menu__comida">
-            <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
-            <div class="menu__comida__info">
-              <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
         </div>
@@ -376,21 +368,24 @@
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
           <div class="menu__comida">
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
           <div class="menu__comida">
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
         </div>
@@ -399,27 +394,88 @@
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
           <div class="menu__comida">
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
           <div class="menu__comida">
             <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
             <div class="menu__comida__info">
               <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
-              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, earum accusamus.</p>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--wrap">
+          <div class="menu__comida">
+            <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
+            <div class="menu__comida__info">
+              <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
+            </div>
+          </div>
+          <div class="menu__comida">
+            <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
+            <div class="menu__comida__info">
+              <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
+            </div>
+          </div>
+          <div class="menu__comida">
+            <img class="menu__comida__img" src="./resources/Imagenes/menu_01.jpg" alt="Eggs & Bacon">
+            <div class="menu__comida__info">
+              <h1 class="menu__comida__info__titulo">Eggs & Bacon</h1>
+              <p class="menu__comida__info__descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, earum accusamus.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="swiper-button-prev swiper-button-prev--custom swiper-button-prev--bottom"></div>
       <div class="swiper-button-next swiper-button-next--custom swiper-button-next--bottom"></div>
+    </div>
+
+    <div class="swiper mySwiper swiper--square">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./resources/Imagenes/menu_01.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/Imagenes/menu_01.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./resources/Imagenes/menu_01.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="datos">
+    <div class="datos__container">
+      <img class="datos__container__img" src="./resources/Iconos/dato_01.png" alt="">
+      <h1 class="datos__container__titulo">84K<span class="datos__container__plus">+</span><br><span
+          class="datos__container__descripcion">Projects are Completed</span></h1>
+    </div>
+    <div class="datos__container">
+      <img class="datos__container__img" src="./resources/Iconos/dato_02.png" alt="">
+      <h1 class="datos__container__titulo">10M<span class="datos__container__plus">+</span><br><span
+          class="datos__container__descripcion">Active Backers Around World</span></h1>
+    </div>
+    <div class="datos__container">
+      <img class="datos__container__img" src="./resources/Iconos/dato_03.png" alt="">
+      <h1 class="datos__container__titulo">02K<span class="datos__container__plus">+</span><br><span
+          class="datos__container__descripcion">Categories Served</span></h1>
+    </div>
+    <div class="datos__container datos__container--noMargin">
+      <img class="datos__container__img" src="./resources/Iconos/dato_04.png" alt="">
+      <h1 class="datos__container__titulo">100M<span class="datos__container__plus">+</span><br><span
+          class="datos__container__descripcion">Idea Raised Funds</span></h1>
     </div>
   </section>
 

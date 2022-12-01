@@ -8,6 +8,12 @@
     flex-wrap: wrap;
 }
 
+.swiper--square {
+    width: 355px;
+    height: 355px;
+    margin-top: 60px;
+}
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -30,6 +36,7 @@
 
 .swiper-slide--wrap {
     flex-wrap: wrap;
+    margin-right: 0 !important;
 }
 
 .swiper-slide img {
