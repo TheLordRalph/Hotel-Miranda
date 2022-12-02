@@ -3,6 +3,11 @@
     height: 100%;
     position: relative;
 }
+
+.swiper-homeRooms-desktop {
+    display: none;
+}
+
 .swiper--flex {
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +42,7 @@
 .swiper-slide--wrap {
     flex-wrap: wrap;
     margin-right: 0 !important;
+    flex-flow: column nowrap;
 }
 
 .swiper-slide img {
@@ -47,7 +53,7 @@
 }
 
 .swiper-button-next--custom, .swiper-button-prev--custom {
-    top: 25%;
+    top: 35vw;
     height: 8.3vw;
     width: 8.3vw;
     --swiper-navigation-size: 10px;
@@ -73,4 +79,14 @@
 
 .swiper-button-prev--bottom {
     margin-left: auto;
+}
+
+
+@media (min-width: 1000px) {
+    .swiper-homeRooms-movile {
+        display: none;
+    }
+    .swiper-homeRooms-desktop {
+        display: block;
+    }
 }

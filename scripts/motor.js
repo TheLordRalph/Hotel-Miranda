@@ -38,10 +38,20 @@ window.addEventListener('resize', () => {
 
 // Swipers
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper-homeRooms-movile", {
   Navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".swiper-homeRooms-desktop", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
 

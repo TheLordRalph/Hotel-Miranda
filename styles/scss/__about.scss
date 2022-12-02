@@ -25,6 +25,7 @@
             .abaout__cards__card__descripcion {
                 color: #111111;
                 padding-top: 54px;
+                height: 300px;
                 .abaout__cards__card__descripcion__imgFondo {
                     width: 144px;
                     opacity: 10%;
@@ -72,6 +73,9 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: start;
+        position: relative;
+        overflow: scroll;
+        margin-bottom: 138px;
         .about__cards {
             display: flex;
             margin-left: auto;

@@ -454,6 +454,7 @@ body {
 .about .about__cards .abaout__cards__card .abaout__cards__card__descripcion {
   color: #111111;
   padding-top: 54px;
+  height: 300px;
 }
 .about .about__cards .abaout__cards__card .abaout__cards__card__descripcion .abaout__cards__card__descripcion__imgFondo {
   width: 144px;
@@ -497,6 +498,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
+    position: relative;
+    overflow: scroll;
+    margin-bottom: 138px;
   }
   .about .about__cards {
     display: flex;
@@ -585,10 +589,19 @@ body {
   color: #BEAD8E;
 }
 
+@media (min-width: 1000px) {
+  .rooms {
+    margin-top: 138px;
+  }
+}
 .swiper {
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+.swiper-homeRooms-desktop {
+  display: none;
 }
 
 .swiper--flex {
@@ -615,6 +628,7 @@ body {
 .swiper-slide--wrap {
   flex-wrap: wrap;
   margin-right: 0 !important;
+  flex-flow: column nowrap;
 }
 
 .swiper-slide img {
@@ -626,7 +640,7 @@ body {
 }
 
 .swiper-button-next--custom, .swiper-button-prev--custom {
-  top: 25%;
+  top: 35vw;
   height: 8.3vw;
   width: 8.3vw;
   --swiper-navigation-size: 10px;
@@ -653,6 +667,14 @@ body {
   margin-left: auto;
 }
 
+@media (min-width: 1000px) {
+  .swiper-homeRooms-movile {
+    display: none;
+  }
+  .swiper-homeRooms-desktop {
+    display: block;
+  }
+}
 .video .video__iframe {
   margin-bottom: 36px;
 }
