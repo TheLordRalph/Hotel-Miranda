@@ -70,3 +70,35 @@
 .inicio--paddTopMenu {
     padding-top: 115px;
 }
+
+
+@media (min-width: 1000px) { 
+    .inicio {
+        padding-top: 178px;
+        padding-left: 20%;
+        .inicio__titulo {
+            font-size: 120px;
+            line-height: 130px;
+            letter-spacing: -3.6px;
+        }
+    }
+    .inicio--sections {
+        padding: 0;
+        margin-left: 76px;
+        margin-right: auto;
+        .inicio__titulo--section {
+            font-size: 4rem;
+            line-height: 90px;
+            letter-spacing: -2.4px;
+        }
+    }
+
+    .inicio--paddTopMenu {
+        padding-top: 195px;
+    }
+
+    .inicio--noMarginLeft {
+        margin-left: 0;
+    }
+
+}

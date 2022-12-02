@@ -305,6 +305,33 @@ body {
   padding-top: 115px;
 }
 
+@media (min-width: 1000px) {
+  .inicio {
+    padding-top: 178px;
+    padding-left: 20%;
+  }
+  .inicio .inicio__titulo {
+    font-size: 120px;
+    line-height: 130px;
+    letter-spacing: -3.6px;
+  }
+  .inicio--sections {
+    padding: 0;
+    margin-left: 76px;
+    margin-right: auto;
+  }
+  .inicio--sections .inicio__titulo--section {
+    font-size: 4rem;
+    line-height: 90px;
+    letter-spacing: -2.4px;
+  }
+  .inicio--paddTopMenu {
+    padding-top: 195px;
+  }
+  .inicio--noMarginLeft {
+    margin-left: 0;
+  }
+}
 .boton {
   background-color: #BEAD8E;
   width: 217px;
@@ -338,6 +365,14 @@ body {
   padding: 22px 24px;
 }
 
+@media (min-width: 1000px) {
+  .boton {
+    display: inline-block;
+  }
+  .boton--transparent {
+    margin-left: 30px;
+  }
+}
 .disponible {
   background-color: #222222;
   color: white;
@@ -375,6 +410,22 @@ body {
   border: none;
 }
 
+@media (min-width: 1000px) {
+  .disponible {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 20%;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .disponible .disponible__container {
+    width: 28%;
+  }
+  .disponible .disponible__container--margin {
+    margin-right: auto;
+    margin-left: 30px;
+  }
+}
 .about .about__fondo {
   background-image: url(../resources/Imagenes/background_01.png);
   background-repeat: no-repeat;
@@ -383,6 +434,7 @@ body {
   z-index: -5;
   width: 100%;
   left: 0;
+  opacity: 60%;
 }
 .about .about__cards {
   margin-top: 60px;
@@ -440,6 +492,42 @@ body {
   color: white;
 }
 
+@media (min-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+  .about .about__cards {
+    display: flex;
+    margin-left: auto;
+  }
+  .about .about__cards .abaout__cards__card {
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+  .about .about__cards .abaout__cards__card .abaout__cards__card__img {
+    margin-top: 30px;
+  }
+  .about .about__cards .abaout__cards__card .abaout__cards__card__descripcion {
+    margin-top: 30px;
+  }
+  .about .about__cards .abaout__cards__card .abaout__cards__card__descripcion .abaout__cards__card__descripcion__imgFondo {
+    left: 22.5%;
+  }
+  .about .about__cards .abaout__cards__card--flexDirection {
+    flex-direction: column-reverse;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .about .about__fondo {
+    background-position: right;
+    background-size: 100%;
+    width: 1084px;
+    margin-left: 44%;
+    margin-top: 250px;
+  }
+}
 .rooms .rooms__caracteristicas {
   height: 40px;
   width: 50%;

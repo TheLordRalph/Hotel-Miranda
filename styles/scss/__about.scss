@@ -7,6 +7,7 @@
         z-index: -5;
         width: 100%;
         left: 0;
+        opacity: 60%;
     }
     .about__cards {
         margin-top: 60px;
@@ -61,6 +62,44 @@
                 background-color: $colorPrincipal;
                 color: white;
             }
+        }
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        .about__cards {
+            display: flex;
+            margin-left: auto;
+            .abaout__cards__card {
+                margin-left: 30px;
+                margin-bottom: 0;
+                .abaout__cards__card__img {
+                    margin-top: 30px;
+                }
+                .abaout__cards__card__descripcion {
+                    margin-top: 30px;
+                    .abaout__cards__card__descripcion__imgFondo {
+                        left: 22.5%;
+                    }
+                }
+            }
+            .abaout__cards__card--flexDirection {
+                flex-direction: column-reverse;
+                margin-left: 0;
+                margin-bottom: 30px;
+            }
+        }
+        .about__fondo {
+            background-position: right;
+            background-size: 100%;
+            width: 1084px;
+            margin-left: 44%;
+            margin-top: 250px;
         }
     }
 }

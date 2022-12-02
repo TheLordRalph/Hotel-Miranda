@@ -34,3 +34,21 @@
         }
     }
 }
+
+
+@media (min-width: 1000px) {
+    .disponible {
+        display: flex;
+        justify-content: space-between;
+        padding: 37px 20%;
+        align-items: center;
+        margin-bottom: 0;
+        .disponible__container {
+            width: 28%;   
+        }
+        .disponible__container--margin {
+            margin-right: auto;
+            margin-left: 30px;
+        }
+    }
+}
