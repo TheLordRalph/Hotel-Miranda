@@ -16,6 +16,9 @@ body {
 .header {
   background-color: #222222;
 }
+.header .header__text {
+  display: none;
+}
 .header .header__bar {
   display: flex;
   align-items: center;
@@ -25,6 +28,7 @@ body {
   height: 70px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   justify-content: center;
+  z-index: 5;
 }
 .header .header__bar .header__bar__menu {
   display: flex;
@@ -113,19 +117,63 @@ body {
 @media (min-width: 1000px) {
   .header {
     height: 100px;
+    padding-top: 10px;
+  }
+  .header .header__text {
+    display: block;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
   }
   .header .header__bar {
-    height: 120px;
     width: 70%;
     margin: 0 auto;
     position: relative;
-    top: 40px;
+    height: auto;
+    padding: 20px 20px;
+    justify-content: center;
   }
   .header .header__bar .header__bar__menuLogo {
     display: none;
   }
   .header .header__bar .header__bar__menu {
-    display: block;
+    width: 40%;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 5%;
+  }
+  .header .header__bar .header__bar__menu .header__bar__menu__enlace {
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header .header__bar .header__container {
+    margin-right: 0;
+  }
+  .header .header__bar .header__container .header__user {
+    padding: 20px;
+    border: 2px solid rgba(133, 133, 133, 0.1882352941);
+  }
+  .header .header__bar .header__container .header__buscador {
+    margin-left: 20px;
+    padding: 20px;
+    border: 2px solid rgba(133, 133, 133, 0.1882352941);
+  }
+  .header-burger {
+    display: none;
   }
 }
 .logo {
@@ -166,6 +214,20 @@ body {
   margin-left: 5%;
 }
 
+@media (min-width: 1000px) {
+  .logo {
+    margin: 0;
+    width: auto;
+  }
+  .logo .logo__logo {
+    font-size: 40px;
+    width: auto;
+    padding: 18px 24px;
+  }
+  .logo .logo__titulo {
+    font-size: 26px;
+  }
+}
 .inicio {
   background-color: #333333;
   padding: 75px 20px;
@@ -195,6 +257,11 @@ body {
 .inicio .inicio__titulo--marginB {
   margin-bottom: 16px;
 }
+.inicio .inicio__titulo--widthFitCon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .inicio .inicio__descripcion {
   font-family: "Archivo", sans-serif;
   font-size: 13px;
@@ -221,7 +288,7 @@ body {
   line-height: 24px;
   color: #777777;
   margin-bottom: 24px;
-  width: 80%;
+  width: 20rem;
 }
 .inicio .inicio__texto--light {
   color: #C2C2C2;
@@ -550,6 +617,8 @@ body {
 
 .menu {
   margin: 60px 0;
+  position: relative;
+  overflow: clip;
 }
 .menu .menu__img {
   width: 115px;
@@ -686,6 +755,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 46px;
   margin: 24px 0;
 }
 .footer .footer__contactUs {
@@ -730,4 +800,41 @@ body {
   font-size: 16px;
   color: #222222;
   margin-top: 24px;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .footer .footer__info {
+    width: 15%;
+    height: 100%;
+    margin: 0;
+  }
+  .footer .footer__services {
+    width: 25%;
+    height: 100%;
+    margin: 0 80px;
+  }
+  .footer .footer__contactUs {
+    width: 15%;
+    height: 100%;
+    margin: 0;
+  }
+  .footer .footer__terms {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 29px 0 32px 0;
+    margin-top: 100px;
+  }
+  .footer .footer__terms .footer__terms__enlace {
+    margin: 0;
+  }
+  .footer .footer__terms .footer__terms__enlace {
+    margin: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

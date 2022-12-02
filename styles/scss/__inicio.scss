@@ -24,6 +24,9 @@
     .inicio__titulo--marginB {
         margin-bottom: 16px;
     }
+    .inicio__titulo--widthFitCon {
+        width: fit-content;
+    }
     .inicio__descripcion {
         font-family: $fontFamilyPrincipal;
         font-size: 13px;
@@ -50,7 +53,7 @@
         line-height: 24px;
         color: #777777;
         margin-bottom: 24px;
-        width: 80%;
+        width: 20rem;
     }
     .inicio__texto--light {
         color: #C2C2C2;

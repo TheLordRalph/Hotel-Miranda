@@ -35,3 +35,19 @@
         margin-left: 5%;
     }
 }
+
+
+@media (min-width: 1000px) {
+    .logo {
+        margin: 0;
+        width: auto;
+        .logo__logo {
+            font-size: 40px;
+            width: auto;
+            padding: 18px 24px;
+        }
+        .logo__titulo {
+            font-size: 26px;
+        }
+    }
+}

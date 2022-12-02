@@ -20,6 +20,24 @@ window.addEventListener("scroll", () => {
   lastScroll = window.scrollY;
 })
 
+window.onload = () => {
+  if (document.body.scrollWidth > 1000) {
+    document.getElementById('menuEnlaces').classList.remove(DISPLAY_NONE);
+  }
+}
+
+window.addEventListener('resize', () => {
+  if (document.body.scrollWidth > 1000) {
+    document.getElementById('menuEnlaces').classList.remove(DISPLAY_NONE);
+  } else {
+    document.getElementById('menuEnlaces').classList.add(DISPLAY_NONE);
+  }
+})
+
+
+
+// Swipers
+
 var swiper = new Swiper(".mySwiper", {
   Navigation: {
     nextEl: ".swiper-button-next",
