@@ -1,5 +1,41 @@
 .video {
+    background-color: $colorPrincipal;
     .video__iframe {
         margin-bottom: 36px;
     }
+
+    .video__fondo {
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 1000px) { 
+
+    .video {
+        padding-left: 20%;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        .video__iframe {
+            position: absolute;
+            width: 30vw;
+            height: 23.5vw;
+            right: 10%;
+            transform: translateY(-22rem);
+            z-index: 1;
+        }
+
+        .video__fondo {
+            background-color: $colorSecundario;
+            display: block;
+            position: absolute;
+            width: 20%;
+            right: 0;
+            transform: translateY(-81.7%);
+            height: 41.4rem;
+        }
+    }
+    
 }

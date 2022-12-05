@@ -46,22 +46,22 @@ var swiper = new Swiper(".swiper-homeRooms-movile", {
 });
 
 var swiper = new Swiper(".swiper-homeRooms-desktop", {
-  slidesPerView: "auto",
+  slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  Navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
-var swiper2 = new Swiper(".mySwiper2", {
+var swiperFacilities = new Swiper(".swiper-facilities", {
   pagination: {
     el: ".swiper-pagination",
   },
 });
 
-var swiper3 = new Swiper(".mySwiper", {
+var swiper3 = new Swiper(".swiper--square", {
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,

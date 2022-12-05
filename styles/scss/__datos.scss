@@ -33,3 +33,15 @@
         margin: 0;
     }
 }
+
+
+@media (min-width: 1000px) {
+    .datos {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 80px 0;
+        .datos__container {
+            margin: 0;
+        }
+    }
+}

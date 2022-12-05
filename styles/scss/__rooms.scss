@@ -16,7 +16,7 @@
     }
     .rooms__card {
         .rooms__card__img {
-            height: 65vw;
+            height: 100%;
         }
         .rooms__card__info {
             width: 89%;
@@ -63,5 +63,39 @@
 @media (min-width: 1000px) {
     .rooms {
         margin-top: 138px;
+        .rooms__card {
+            .rooms__card__img {
+                height: 26vw;
+            }
+            .rooms__caracteristicas {
+                display: none;
+                transition: transform 1s;
+            }
+            .rooms__card__info {
+                display: none;
+                transition: transform 1s;
+            }
+        }
+        
+        .rooms__card:hover {
+            .rooms__caracteristicas {
+                transform: scale(1.2);
+            }
+            .rooms__card__info {
+                transform: scale(1.2);
+            }
+        }
+        
+        .swiper-slide-active {
+            .rooms__card {
+                .rooms__caracteristicas {
+                    display: flex;
+                }
+                .rooms__card__info {
+                    display: block;
+                }
+            }
+        }
     }
+
 }

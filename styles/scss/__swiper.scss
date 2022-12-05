@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 
-.swiper--square {
+.swiper--imagenesMenu {
     width: 355px;
     height: 355px;
     margin-top: 60px;
@@ -56,7 +56,7 @@
     top: 35vw;
     height: 8.3vw;
     width: 8.3vw;
-    --swiper-navigation-size: 10px;
+    --swiper-navigation-size: 2vw;
     color: black;
     background-color: #F8F8F8;
 }
@@ -83,10 +83,61 @@
 
 
 @media (min-width: 1000px) {
-    .swiper-homeRooms-movile {
+
+    // HOME-ROOMS
+    .swiper-homeRooms-mobile {
         display: none;
     }
     .swiper-homeRooms-desktop {
         display: block;
+
+        .swiper-slide-homeRooms {
+            margin-top: 40px;
+        }
+    
+        .swiper-slide-active {
+            margin-top: 0px;
+        }
+    }
+
+
+    // FACILITIES
+    .swiper-facilities {
+        display: none;
+    }
+
+    // Menu
+    .swiper-wrapper-menu {
+        align-items: center;
+    }
+
+    .swiper-slide--wrap {
+        display: grid;
+        column-gap: 165px;
+    }
+
+    .swiper-slide--mobile {
+        display: none;
+    }
+
+    .swiper--imagenesMenu {
+        display: none;
+    }
+
+
+    
+    .swiper-button-next--custom, .swiper-button-prev--custom {
+        top: 35%;
+        height: 4.3vw;
+        width: 4.3vw;
+        --swiper-navigation-size: 1vw;
+    }
+
+    .swiper-button-next--custom {
+        right: 25%;
+    }
+
+    .swiper-button-prev--custom {
+        left: 25%;
     }
 }

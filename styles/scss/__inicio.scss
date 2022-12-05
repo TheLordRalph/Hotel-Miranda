@@ -61,6 +61,10 @@
     }
 }
 
+.inicio--bgColor {
+    background-color: $colorPrincipal;
+}
+
 .inicio--bgNull {
     background: none;
     padding: 0px 20px;
@@ -81,16 +85,17 @@
             line-height: 130px;
             letter-spacing: -3.6px;
         }
+        .inicio__titulo--section {
+            font-size: 80px;
+            line-height: 90px;
+            letter-spacing: -2.4px;
+        }
     }
     .inicio--sections {
         padding: 0;
         margin-left: 76px;
         margin-right: auto;
-        .inicio__titulo--section {
-            font-size: 4rem;
-            line-height: 90px;
-            letter-spacing: -2.4px;
-        }
+
     }
 
     .inicio--paddTopMenu {
@@ -99,6 +104,10 @@
 
     .inicio--noMarginLeft {
         margin-left: 0;
+    }
+
+    .inicio--width {
+        width: 40%;
     }
 
 }
