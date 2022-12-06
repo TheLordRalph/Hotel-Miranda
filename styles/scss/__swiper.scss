@@ -8,7 +8,7 @@
     display: none;
 }
 
-.swiper--flex {
+.swiper-menu {
     display: flex;
     flex-wrap: wrap;
 }
@@ -100,6 +100,21 @@
         }
     }
 
+    .swiper-button-next--custom, .swiper-button-prev--custom {
+        top: 35%;
+        height: 4.3vw;
+        width: 4.3vw;
+        --swiper-navigation-size: 1vw;
+    }
+
+    .swiper-button-next--custom {
+        right: 25%;
+    }
+
+    .swiper-button-prev--custom {
+        left: 25%;
+    }
+
 
     // FACILITIES
     .swiper-facilities {
@@ -107,6 +122,10 @@
     }
 
     // Menu
+    .swiper-menu {
+        overflow: initial;
+    }
+
     .swiper-wrapper-menu {
         align-items: center;
     }
@@ -124,20 +143,11 @@
         display: none;
     }
 
-
-    
-    .swiper-button-next--custom, .swiper-button-prev--custom {
-        top: 35%;
-        height: 4.3vw;
-        width: 4.3vw;
-        --swiper-navigation-size: 1vw;
+    .swiper-button-prev--top, .swiper-button-next--top {
+        position: relative;
+        right: 20%;
+        top: -120%;
+        left: auto;
     }
 
-    .swiper-button-next--custom {
-        right: 25%;
-    }
-
-    .swiper-button-prev--custom {
-        left: 25%;
-    }
 }

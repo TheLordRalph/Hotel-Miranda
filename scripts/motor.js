@@ -55,6 +55,13 @@ var swiper = new Swiper(".swiper-homeRooms-desktop", {
   },
 });
 
+var swiper = new Swiper(".swiper-menu", {
+  Navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 var swiperFacilities = new Swiper(".swiper-facilities", {
   pagination: {
     el: ".swiper-pagination",

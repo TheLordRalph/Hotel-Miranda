@@ -48,7 +48,29 @@
 
 @media (min-width: 1000px) {
     .menu {
-        padding: 0 20%;
+        .menu__img {
+            right: auto;
+            left: 80px;
+            width: 229px;
+            height: 229px;
+        }
+        .menu__comida {
+            width: fit-content;
+            .menu__comida__info {
+                margin: 0;
+                padding: 21px 30px;
+                width: 50%;
+            }
+            .menu__comida__info--black {
+                background-color: $colorPrincipal;
+                .menu__comida__info__titulo--black {
+                    color: white;
+                }
+                .menu__comida__info__descripcion--black {
+                    color: white;
+                }
+            }
+        }
         .menu__comida--desktop {
             display: flex;
         }
@@ -64,10 +86,15 @@
         .menu__imagenes{
             display: flex;
             justify-content: space-evenly;
-            margin-top: 120px;
+            margin: 120px auto 0 auto;
+            width: fit-content;
             .menu__imagen {
                 width: 370px;
                 height: 370px;
+                margin-right: 30px;
+            }
+            .menu__imagen--noMargin {
+                margin-right: 0px;
             }
         }
     }
