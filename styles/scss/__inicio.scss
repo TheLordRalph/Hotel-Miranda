@@ -59,6 +59,29 @@
         color: #C2C2C2;
         width: 100%;
     }
+
+    .inicio__etiqueta {
+        background-color: white;
+        padding: 16px 0;
+        width: fit-content;
+        margin-left: auto;
+        .inicio__etiqueta__titulo {
+            font-family: $fontFamilyPrincipal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 17px;
+            letter-spacing: -0.48px;
+            width: fit-content;
+            margin: 0 30px;
+            span {
+                color: $colorSecundario;
+            }
+        }
+    }
+}
+
+.inicio--noPaddingBottom {
+    padding-bottom: 0;
 }
 
 .inicio--bgColor {

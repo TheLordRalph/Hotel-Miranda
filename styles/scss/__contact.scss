@@ -1,0 +1,80 @@
+.contactUs {
+    width: 90%;
+    margin: 0 auto;
+    .contactUs__contacto {
+        display: flex;
+        margin-bottom: 50px;
+        .contactUs__img {
+            width: 40px;
+            height: 40px;
+        }
+        .contactUs__img--margin {
+            margin: 64px 0 56px 0;
+        }
+        .contactUs__informacion {
+            margin-left: 21px;
+            .contactUs__informacion__titulo {
+                font-family: $fontFamilySecundaria;
+                font-weight: 400;
+                font-size: 20px;
+                color: $colorPrincipal;
+                text-decoration: none;
+            }
+            .contactUs__informacion__titulo--lineHeight {
+                line-height: 48px;
+            }
+            .contactUs__informacion__descripcion {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                text-decoration: none;
+                h4 {
+                    color: #777777;
+                }
+            }
+        }
+        .contactUs__informacion--margin {
+            margin: 53px 0 56px 21px;
+        }
+    }
+    .contactUs__contacto--padding {
+        padding: 0 5%;
+    }
+    .contactUs__contacto--margin {
+        margin-bottom: 47px;
+    }
+    .contactUs__fondo {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 234px;
+        letter-spacing: -6px;
+        color: #F8F8F8;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+    }
+    .contactUs__map {
+        width: 355px;
+        height: 200px;
+        margin: 23px auto 0 auto;
+    }
+}
+
+.contactUs--pading {
+    padding: 24px 0 60px 0;
+}
+
+.contactUs--flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1000px) {
+
+    .contactUs {
+        width: 15%;
+        height: 100%;
+        margin: 0;
+    }
+}

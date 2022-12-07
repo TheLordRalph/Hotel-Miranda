@@ -294,6 +294,32 @@ body {
   color: #C2C2C2;
   width: 100%;
 }
+.inicio .inicio__etiqueta {
+  background-color: white;
+  padding: 16px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+.inicio .inicio__etiqueta .inicio__etiqueta__titulo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: -0.48px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 30px;
+}
+.inicio .inicio__etiqueta .inicio__etiqueta__titulo span {
+  color: #BEAD8E;
+}
+
+.inicio--noPaddingBottom {
+  padding-bottom: 0;
+}
 
 .inicio--bgColor {
   background-color: #222222;
@@ -378,6 +404,10 @@ body {
 .boton--big {
   width: 250px;
   padding: 22px 24px;
+}
+
+.boton--marginAuto {
+  margin: auto;
 }
 
 @media (min-width: 1000px) {
@@ -1031,6 +1061,120 @@ body {
     margin: 0;
   }
 }
+.contactUs {
+  width: 90%;
+  margin: 0 auto;
+}
+.contactUs .contactUs__contacto {
+  display: flex;
+  margin-bottom: 50px;
+}
+.contactUs .contactUs__contacto .contactUs__img {
+  width: 40px;
+  height: 40px;
+}
+.contactUs .contactUs__contacto .contactUs__img--margin {
+  margin: 64px 0 56px 0;
+}
+.contactUs .contactUs__contacto .contactUs__informacion {
+  margin-left: 21px;
+}
+.contactUs .contactUs__contacto .contactUs__informacion .contactUs__informacion__titulo {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222222;
+  text-decoration: none;
+}
+.contactUs .contactUs__contacto .contactUs__informacion .contactUs__informacion__titulo--lineHeight {
+  line-height: 48px;
+}
+.contactUs .contactUs__contacto .contactUs__informacion .contactUs__informacion__descripcion {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+.contactUs .contactUs__contacto .contactUs__informacion .contactUs__informacion__descripcion h4 {
+  color: #777777;
+}
+.contactUs .contactUs__contacto .contactUs__informacion--margin {
+  margin: 53px 0 56px 21px;
+}
+.contactUs .contactUs__contacto--padding {
+  padding: 0 5%;
+}
+.contactUs .contactUs__contacto--margin {
+  margin-bottom: 47px;
+}
+.contactUs .contactUs__fondo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 234px;
+  letter-spacing: -6px;
+  color: #F8F8F8;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+.contactUs .contactUs__map {
+  width: 355px;
+  height: 200px;
+  margin: 23px auto 0 auto;
+}
+
+.contactUs--pading {
+  padding: 24px 0 60px 0;
+}
+
+.contactUs--flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1000px) {
+  .contactUs {
+    width: 15%;
+    height: 100%;
+    margin: 0;
+  }
+}
+.formulario .formulario__form {
+  text-align: center;
+}
+.formulario .formulario__form .formulario__input {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #777777;
+  background-color: #F8F8F8;
+  border: none;
+  width: 80%;
+  padding: 25px 0 23px 56px;
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: 27.5px;
+}
+.formulario .formulario__form .formulario__input--name {
+  background-image: url(../resources/Iconos/form-name.png);
+}
+.formulario .formulario__form .formulario__input--phone {
+  background-image: url(../resources/Iconos/form-phone.png);
+}
+.formulario .formulario__form .formulario__input--email {
+  background-image: url(../resources/Iconos/form-email.png);
+}
+.formulario .formulario__form .formulario__input--subject {
+  background-image: url(../resources/Iconos/form-subject.png);
+}
+.formulario .formulario__form .formulario__input--message {
+  background-image: url(../resources/Iconos/form-message.png);
+  margin-bottom: 36px;
+}
+
 .rs {
   display: flex;
 }
@@ -1097,37 +1241,6 @@ body {
   line-height: 46px;
   margin: 24px 0;
 }
-.footer .footer__contactUs {
-  width: 90%;
-  margin: 0 auto;
-}
-.footer .footer__contactUs .footer__contactUs__contacto {
-  display: flex;
-  margin-bottom: 50px;
-}
-.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__img {
-  width: 40px;
-  height: 40px;
-}
-.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__informacion {
-  margin-left: 21px;
-}
-.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__informacion .footer__contactUs__contacto__informacion__titulo {
-  font-family: "Old Standard TT", serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: #222222;
-  text-decoration: none;
-}
-.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__informacion .footer__contactUs__contacto__informacion__descripcion {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  text-decoration: none;
-}
-.footer .footer__contactUs .footer__contactUs__contacto .footer__contactUs__contacto__informacion .footer__contactUs__contacto__informacion__descripcion h4 {
-  color: #777777;
-}
 .footer .footer__terms {
   background-color: #F8F8F8;
   padding: 16px 20px;
@@ -1157,11 +1270,6 @@ body {
     width: 25%;
     height: 100%;
     margin: 0 80px;
-  }
-  .footer .footer__contactUs {
-    width: 15%;
-    height: 100%;
-    margin: 0;
   }
   .footer .footer__terms {
     width: 100%;
