@@ -14,6 +14,9 @@
             width: 16px;
         }
     }
+    .rooms__caracteristicas--top {
+        top: -20px;
+    }
     .rooms__card {
         .rooms__card__img {
             height: 100%;
@@ -55,8 +58,40 @@
                     color: $colorSecundario;
                 }
             }
+            .rooms__card__info__precio--fontSize {
+                font-size: 16px;
+                line-height: 17px;
+                span {
+                    font-size: 16px;
+                    line-height: 17px;
+                }
+            }
+            .rooms__card__info__precio--widht {
+                width: fit-content;
+            }
+            .rooms__info__buttonBooking {
+                font-family: $fontFamilyPrincipal;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 17px;
+                margin-left: 19px;
+                color: #BDBDBD;
+                text-decoration: none;
+            }
+        }
+        .rooms__card__info--flexWrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
     }
+}
+
+.rooms--margin {
+    margin: 49px 0;
+
 }
 
 

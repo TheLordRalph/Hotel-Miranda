@@ -45,6 +45,10 @@
     flex-flow: column nowrap;
 }
 
+.swiper-slide--padding {
+    padding: 0 5%;
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -79,6 +83,27 @@
 
 .swiper-button-prev--bottom {
     margin-left: auto;
+}
+
+.swiper-pagination--rooms {
+    span {
+        font-family: $fontFamilyTerciaria;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        width: 39px;
+        height: 39px;
+        padding: 11px 0;
+        border-radius: 0;
+        color: $colorPrincipal;
+        background: none;
+        opacity: 1;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    color: white !important;
+    background-color: $colorSecundario !important;
 }
 
 

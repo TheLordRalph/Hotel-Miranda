@@ -592,6 +592,9 @@ body {
 .rooms .rooms__caracteristicas img {
   width: 16px;
 }
+.rooms .rooms__caracteristicas--top {
+  top: -20px;
+}
 .rooms .rooms__card .rooms__card__img {
   height: 100%;
 }
@@ -632,6 +635,39 @@ body {
   font-size: 13px;
   line-height: 43px;
   color: #BEAD8E;
+}
+.rooms .rooms__card .rooms__card__info .rooms__card__info__precio--fontSize {
+  font-size: 16px;
+  line-height: 17px;
+}
+.rooms .rooms__card .rooms__card__info .rooms__card__info__precio--fontSize span {
+  font-size: 16px;
+  line-height: 17px;
+}
+.rooms .rooms__card .rooms__card__info .rooms__card__info__precio--widht {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.rooms .rooms__card .rooms__card__info .rooms__info__buttonBooking {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  margin-left: 19px;
+  color: #BDBDBD;
+  text-decoration: none;
+}
+.rooms .rooms__card .rooms__card__info--flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.rooms--margin {
+  margin: 49px 0;
 }
 
 @media (min-width: 1000px) {
@@ -699,6 +735,10 @@ body {
   flex-flow: column nowrap;
 }
 
+.swiper-slide--padding {
+  padding: 0 5%;
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -733,6 +773,25 @@ body {
 
 .swiper-button-prev--bottom {
   margin-left: auto;
+}
+
+.swiper-pagination--rooms span {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  width: 39px;
+  height: 39px;
+  padding: 11px 0;
+  border-radius: 0;
+  color: #222222;
+  background: none;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  color: white !important;
+  background-color: #BEAD8E !important;
 }
 
 @media (min-width: 1000px) {
