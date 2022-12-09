@@ -11,6 +11,16 @@
         margin-bottom: 20px;
         color: white;
     }
+    .disponible__titulo--roomDetail {
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.54px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .disponible__titulo--balack {
+        color: $colorPrincipal;
+    }
     .disponible__date {
         border-bottom: 2px solid $colorSecundario;
         margin-bottom: 30px;
@@ -33,6 +43,21 @@
             border: none;
         }
     }
+    .disponible__date--roomDetail {
+        border: none;
+        background-color: #F8F8F8;
+        padding: 22px 30px 22px 29px;
+    }
+    .disponible__descripcion {
+        margin-top: 48px;
+        font-family: #777777;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+.disponible--roomDetail {
+    background: none;
 }
 
 

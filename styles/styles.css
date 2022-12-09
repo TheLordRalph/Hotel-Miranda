@@ -262,6 +262,15 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
+.inicio .inicio__titulo--subTitle {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #222222;
+  border-bottom: 1px solid #F1F1F1;
+  padding-bottom: 13.45px;
+}
 .inicio .inicio__descripcion {
   font-family: "Archivo", sans-serif;
   font-size: 13px;
@@ -289,6 +298,9 @@ body {
   color: #777777;
   margin-bottom: 24px;
   width: 20rem;
+}
+.inicio .inicio__texto--width {
+  width: 100%;
 }
 .inicio .inicio__texto--light {
   color: #C2C2C2;
@@ -331,8 +343,34 @@ body {
   padding-top: 38px;
 }
 
+.inicio--width {
+  width: 100%;
+}
+
+.inicio--noPaddingTop {
+  padding-top: 0;
+}
+
 .inicio--paddTopMenu {
   padding-top: 115px;
+}
+
+.inicio--roomDetail {
+  padding-top: 48px;
+}
+.inicio--roomDetail .inicio__descripcion--roomDetail {
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+}
+.inicio--roomDetail .inicio__titulo--roomDetail {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+}
+
+.inicio--marginBottom {
+  margin-bottom: 83px;
 }
 
 @media (min-width: 1000px) {
@@ -432,6 +470,16 @@ body {
   margin-bottom: 20px;
   color: white;
 }
+.disponible .disponible__titulo--roomDetail {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.54px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.disponible .disponible__titulo--balack {
+  color: #222222;
+}
 .disponible .disponible__date {
   border-bottom: 2px solid #BEAD8E;
   margin-bottom: 30px;
@@ -453,6 +501,22 @@ body {
   margin-left: 2%;
   background: none;
   border: none;
+}
+.disponible .disponible__date--roomDetail {
+  border: none;
+  background-color: #F8F8F8;
+  padding: 22px 30px 22px 29px;
+}
+.disponible .disponible__descripcion {
+  margin-top: 48px;
+  font-family: #777777;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.disponible--roomDetail {
+  background: none;
 }
 
 @media (min-width: 1000px) {
@@ -592,14 +656,34 @@ body {
 .rooms .rooms__caracteristicas img {
   width: 16px;
 }
+.rooms .rooms__caracteristicas .rooms__caracteristicas__titulo {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #777;
+  margin-left: 8px;
+}
 .rooms .rooms__caracteristicas--top {
   top: -20px;
+}
+.rooms .rooms__caracteristicas--roomDetail {
+  position: static;
+  padding: 0;
+  width: 40%;
+  height: auto;
+  margin-bottom: 17px;
+  justify-content: start;
 }
 .rooms .rooms__card .rooms__card__img {
   height: 100%;
 }
+.rooms .rooms__card .rooms__card__img--roomDetail {
+  width: 90%;
+  margin: 0 5%;
+}
 .rooms .rooms__card .rooms__card__info {
-  width: 89%;
+  width: 90%;
   margin: auto;
   position: relative;
   bottom: 15px;
@@ -664,6 +748,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.rooms .rooms__card .rooms__card__info--roomDetail {
+  padding: 0;
+  position: static;
+  margin-bottom: 16px;
+}
+
+.rooms--flexWrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .rooms--margin {
@@ -1250,6 +1344,51 @@ body {
 }
 .rs .rs__logo--color {
   background-color: #BEAD8E;
+}
+
+.employee {
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 63px;
+  padding: 60px 26px 41px 25px;
+}
+.employee .employee__fotoPerfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-bottom: 38px;
+}
+.employee .employee__checkPerfil {
+  padding: 11px;
+  background-color: #BEAD8E;
+  border-radius: 100%;
+  border: 4px solid white;
+  position: absolute;
+  left: 54%;
+}
+.employee .employee__nombre {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  margin-bottom: 15px;
+}
+.employee .employee__puesto {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: #BDAC8D;
+  margin-bottom: 25px;
+}
+.employee .employee__descripcion {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
 }
 
 .footer {

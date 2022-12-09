@@ -1,0 +1,44 @@
+.employee {
+    text-align: center;
+    margin-top: 44px;
+    margin-bottom: 63px;
+    padding: 60px 26px 41px 25px;
+    .employee__fotoPerfil {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin-bottom: 38px;
+    }
+    .employee__checkPerfil {
+        padding: 11px;
+        background-color: $colorSecundario;
+        border-radius: 100%;
+        border: 4px solid white;
+        position: absolute;
+        left: 54%;
+    }
+    .employee__nombre {
+        font-family: $fontFamilySecundaria;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: -0.9px;
+        margin-bottom: 15px;
+    }
+    .employee__puesto {
+        font-family: $fontFamilyPrincipal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        color: #BDAC8D;
+        margin-bottom: 25px;
+    }
+    .employee__descripcion {
+        font-family: $fontFamilyPrincipal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #777777;
+    }
+}

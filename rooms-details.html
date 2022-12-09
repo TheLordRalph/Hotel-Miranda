@@ -1,38 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet"> 
-  
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/styles.css">
   <title>Hotel Miranda</title>
 </head>
+
 <body>
   <header class="header">
-    <div class="header__bar">
-      <img class="header__bar__menuLogo" src="resources/Iconos/menu.png" alt="">
+    <p class="header__text">We Make Your Feel Comfortable</p>
+    <div id="header" class="header__bar">
+      <div id="burger" class="header-burger">
+        <div id="burgerBar" class="bar"></div>
+      </div>
       <div class="logo">
         <h1 class="logo__logo">H</h1>
         <h1 class="logo__titulo">HOTEL<br><span>MIRANDA</span></h1>
       </div>
-      <div class="header__bar__menu displayNone">
-        <a href="/about.html" class="header__bar__menu__enlace">About Us</a>
-        <a href="/rooms.html" class="header__bar__menu__enlace">Rooms</a>
-        <a href="/offers.html" class="header__bar__menu__enlace">Offers</a>
-        <a href="/contact.html" class="header__bar__menu__enlace">Contact</a>
+      <div id="menuEnlaces" class="header__bar__menu displayNone">
+        <a href="./about.html" class="header__bar__menu__enlace">About Us</a>
+        <a href="./rooms.html" class="header__bar__menu__enlace">Rooms</a>
+        <a href="./offers.html" class="header__bar__menu__enlace">Offers</a>
+        <a href="./contact.html" class="header__bar__menu__enlace">Contact</a>
       </div>
-      <img class="header__bar__user" src="resources/Iconos/user.png" alt="">
-      <img class="header__bar__buscador" src="resources/Iconos/buscar.png" alt="">
+      <div class="header__container">
+        <img class="header__user" src="resources/Iconos/user.png" alt="">
+        <img class="header__buscador" src="resources/Iconos/buscar.png" alt="">
+      </div>
     </div>
   </header>
+
+  <section class="inicio inicio--noPaddingBottom">
+    <h5 class="inicio__descripcion">THE ULTIMATE LUXURY EXPERIENCE</h5>
+    <h1 class="inicio__titulo">Ultimate Room</h1>
+    <div class="inicio__etiqueta">
+      <h1 class="inicio__etiqueta__titulo">Home | <span>Rooms Details</span></h1>
+    </div>
+  </section>
+
+  <section class="rooms">
+    <section class="inicio inicio--bgNull inicio--roomDetail">
+      <h5 class="inicio__descripcion inicio__descripcion--black inicio__descripcion--roomDetail">DOUBLE BED</h5>
+      <h1 class="inicio__titulo inicio__titulo--black inicio__titulo--widthFitCon inicio__titulo--roomDetail">Luxury
+        Double Bed</h1>
+    </section>
+    <div class="rooms__card">
+      <div class="rooms__card__info rooms__card__info--roomDetail">
+        <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+      </div>
+      <img class="rooms__card__img rooms__card__img--roomDetail" src="./resources/Imagenes/room_02.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="disponible disponible--roomDetail">
+    <h3 class="disponible__titulo disponible__titulo--roomDetail disponible__titulo--balack">Check Availability</h3>
+    <div class="disponible__container">
+      <h5 class="disponible__titulo disponible__titulo--balack">Check In</h5>
+      <div class="disponible__date disponible__date--roomDetail">
+        <input class="disponible__date__input" type="text" name="Arrival Date" id="" placeholder="24th march 2020">
+        <img class="disponible__date__img" src="./resources/Iconos/date.png" alt="date">
+      </div>
+    </div>
+
+    <div class="disponible__container disponible__container--margin">
+      <h5 class="disponible__titulo disponible__titulo--balack">Check Out</h5>
+      <div class="disponible__date disponible__date--roomDetail">
+        <input class="disponible__date__input" type="text" name="LeDeparture Date" id="" placeholder="30th march 2020">
+        <img class="disponible__date__img" src="./resources/Iconos/date.png" alt="date">
+      </div>
+    </div>
+
+    <div class="boton boton--big boton--marginAuto">
+      <h3 class="boton__titulo">Check availability</h3>
+    </div>
+
+    <p class="disponible__descripcion">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+      ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+      eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+      voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+      voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+      velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+    </p>
+  </section>
+
+  <section class="rooms rooms--flexWrap">
+    <div class="inicio inicio--bgNull inicio--noPaddingTop inicio--width">
+      <h1 class="inicio__titulo inicio__titulo--subTitle">Amenities</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_01.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Air conditioner</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_08.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">High speed WiFi</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_02.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Breakfast</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_09.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Kitchen</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_03.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Cleaning</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_10.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Shower</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_04.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Grocery</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_11.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Single bed</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_05.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Shop near</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_12.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Towels</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_06.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">24/7 Online Support</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_13.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Strong Locker</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_07.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Smart Security</h1>
+    </div>
+    <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+      <img src="./resources/Iconos/caracteristica_roomDetail_14.png" alt="">
+      <h1 class="rooms__caracteristicas__titulo">Expert Team</h1>
+    </div>
+  </section>
+
+  <section class="employee">
+    <div class="employee__pefil">
+      <img class="employee__fotoPerfil" src="./resources/Imagenes/empleado.jpeg" alt="">
+      <img class="employee__checkPerfil" src="./resources/Iconos/check.png" alt="">
+    </div>
+    <h1 class="employee__nombre">András I. Arató</h1>
+    <h6 class="employee__puesto">FOUNDER, QUX CO.</h6>
+    <p class="employee__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, expedita? Quibusdam, ut repudiandae expedita quod beatae facilis fuga dolore blanditiis reprehenderit explicabo. Ad, architecto sequi numquam commodi praesentium consequuntur doloribus.</p>
+  </section>
+
+  <section class="inicio inicio--bgNull inicio--noPaddingTop inicio--width inicio--marginBottom">
+    <h1 class="inicio__titulo inicio__titulo--subTitle">Candellation</h1>
+    <p class="inicio__texto inicio__texto--width">Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to get a full refund.</p>
+  </section>
+
+  <!-- swiper Related Rooms -->
+  <section class="rooms">
+    <!-- Swiper version movil -->
+    <div class="swiper swiper-homeRooms-mobile">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <div class="rooms__caracteristicas">
+              <img src="./resources/Iconos/caracteristica_01.png" alt="">
+              <img src="./resources/Iconos/caracteristica_02.png" alt="">
+              <img src="./resources/Iconos/caracteristica_03.png" alt="">
+              <img src="./resources/Iconos/caracteristica_04.png" alt="">
+              <img src="./resources/Iconos/caracteristica_05.png" alt="">
+              <img src="./resources/Iconos/caracteristica_06.png" alt="">
+              <img src="./resources/Iconos/caracteristica_07.png" alt="">
+            </div>
+            <img class="rooms__card__img" src="./resources/Imagenes/room_01.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info rooms__card__info--flexWrap">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1
+                class="rooms__card__info__precio rooms__card__info__precio--widht rooms__card__info__precio--fontSize">
+                $345<span>/Night</span></h1>
+              <a class="rooms__info__buttonBooking" href="#">Booking Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <div class="rooms__caracteristicas">
+              <img src="./resources/Iconos/caracteristica_01.png" alt="">
+              <img src="./resources/Iconos/caracteristica_02.png" alt="">
+              <img src="./resources/Iconos/caracteristica_03.png" alt="">
+              <img src="./resources/Iconos/caracteristica_04.png" alt="">
+              <img src="./resources/Iconos/caracteristica_05.png" alt="">
+              <img src="./resources/Iconos/caracteristica_06.png" alt="">
+              <img src="./resources/Iconos/caracteristica_07.png" alt="">
+            </div>
+            <img class="rooms__card__img" src="./resources/Imagenes/room_02.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info rooms__card__info--flexWrap">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1
+                class="rooms__card__info__precio rooms__card__info__precio--widht rooms__card__info__precio--fontSize">
+                $345<span>/Night</span></h1>
+              <a class="rooms__info__buttonBooking" href="#">Booking Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <div class="rooms__caracteristicas">
+              <img src="./resources/Iconos/caracteristica_01.png" alt="">
+              <img src="./resources/Iconos/caracteristica_02.png" alt="">
+              <img src="./resources/Iconos/caracteristica_03.png" alt="">
+              <img src="./resources/Iconos/caracteristica_04.png" alt="">
+              <img src="./resources/Iconos/caracteristica_05.png" alt="">
+              <img src="./resources/Iconos/caracteristica_06.png" alt="">
+              <img src="./resources/Iconos/caracteristica_07.png" alt="">
+            </div>
+            <img class="rooms__card__img" src="./resources/Imagenes/room_03.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info rooms__card__info--flexWrap">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1
+                class="rooms__card__info__precio rooms__card__info__precio--widht rooms__card__info__precio--fontSize">
+                $345<span>/Night</span></h1>
+              <a class="rooms__info__buttonBooking" href="#">Booking Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <div class="rooms__caracteristicas">
+              <img src="./resources/Iconos/caracteristica_01.png" alt="">
+              <img src="./resources/Iconos/caracteristica_02.png" alt="">
+              <img src="./resources/Iconos/caracteristica_03.png" alt="">
+              <img src="./resources/Iconos/caracteristica_04.png" alt="">
+              <img src="./resources/Iconos/caracteristica_05.png" alt="">
+              <img src="./resources/Iconos/caracteristica_06.png" alt="">
+              <img src="./resources/Iconos/caracteristica_07.png" alt="">
+            </div>
+            <img class="rooms__card__img" src="./resources/Imagenes/room_04.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info rooms__card__info--flexWrap">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1
+                class="rooms__card__info__precio rooms__card__info__precio--widht rooms__card__info__precio--fontSize">
+                $345<span>/Night</span></h1>
+              <a class="rooms__info__buttonBooking" href="#">Booking Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <div class="rooms__caracteristicas">
+              <img src="./resources/Iconos/caracteristica_01.png" alt="">
+              <img src="./resources/Iconos/caracteristica_02.png" alt="">
+              <img src="./resources/Iconos/caracteristica_03.png" alt="">
+              <img src="./resources/Iconos/caracteristica_04.png" alt="">
+              <img src="./resources/Iconos/caracteristica_05.png" alt="">
+              <img src="./resources/Iconos/caracteristica_06.png" alt="">
+              <img src="./resources/Iconos/caracteristica_07.png" alt="">
+            </div>
+            <img class="rooms__card__img" src="./resources/Imagenes/room_05.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info rooms__card__info--flexWrap">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1
+                class="rooms__card__info__precio rooms__card__info__precio--widht rooms__card__info__precio--fontSize">
+                $345<span>/Night</span></h1>
+              <a class="rooms__info__buttonBooking" href="#">Booking Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="rooms__card">
+            <div class="rooms__caracteristicas">
+              <img src="./resources/Iconos/caracteristica_01.png" alt="">
+              <img src="./resources/Iconos/caracteristica_02.png" alt="">
+              <img src="./resources/Iconos/caracteristica_03.png" alt="">
+              <img src="./resources/Iconos/caracteristica_04.png" alt="">
+              <img src="./resources/Iconos/caracteristica_05.png" alt="">
+              <img src="./resources/Iconos/caracteristica_06.png" alt="">
+              <img src="./resources/Iconos/caracteristica_07.png" alt="">
+            </div>
+            <img class="rooms__card__img" src="./resources/Imagenes/room_06.jpg" alt="Habitacion del Hotel">
+            <div class="rooms__card__info rooms__card__info--flexWrap">
+              <h1 class="rooms__card__info__titulo">Minimal Duples Room</h1>
+              <p class="rooms__card__info__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus voluptates aperiam fugiat laboriosam doloribus.</p>
+              <h1
+                class="rooms__card__info__precio rooms__card__info__precio--widht rooms__card__info__precio--fontSize">
+                $345<span>/Night</span></h1>
+              <a class="rooms__info__buttonBooking" href="#">Booking Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button-next--custom"></div>
+      <div class="swiper-button-prev swiper-button-prev--custom"></div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="footer__info">
@@ -40,7 +335,9 @@
         <h1 class="logo__logo logo__logo--footer">H</h1>
         <h1 class="logo__titulo logo__titulo--footer">HOTEL<br><span>MIRANDA</span></h1>
       </div>
-      <p class="footer__info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id veritatis ullam, eius recusandae doloremque suscipit maxime, dicta hic aliquam rerum exercitationem libero laboriosam provident facere. Facilis corrupti asperiores maxime!</p>
+      <p class="footer__info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id veritatis
+        ullam, eius recusandae doloremque suscipit maxime, dicta hic aliquam rerum exercitationem libero laboriosam
+        provident facere. Facilis corrupti asperiores maxime!</p>
       <div class="rs">
         <a class="rs__logo" href="#"><img src="./resources/Iconos/facebook.png" alt="FaceBook"></a>
         <a class="rs__logo rs__logo--color" href="#"><img src="./resources/Iconos/twitter.png" alt="Twitter"></a>
@@ -53,42 +350,56 @@
     <div class="footer__services">
       <h1 class="footer__titulos">Service.</h1>
       <div class="footer__services__servicios">
-        <a href="#" class="footer__services__servicios__servicio">+ Restaurant & Bar</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Swimming Pool</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Wellness & Spa</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Restaurant</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Conference Room</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Coctail Party House</a>
+        <p class="footer__services__servicios__servicio">+ Resturent & Bar<br>
+          + Swimming Pool<br>
+          + Wellness & Spa<br>
+          + Restaurant<br>
+          + Conference Room<br>
+          + Coctail Party House</p>
       </div>
       <div class="footer__services__servicios">
-        <a href="#" class="footer__services__servicios__servicio">+ Gaming Zone</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Marrige Party</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Party Planning</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Tour Consultancy</a>
+        <p class="footer__services__servicios__servicio">+ Gaming Zone<br>
+          + Marrige Party<br>
+          + Party Planning<br>
+          + Tour Consultancy</p>
       </div>
     </div>
 
-    <div class="footer__contactUs">
+    <div class="contactUs">
       <h1 class="footer__titulos">Contact Us.</h1>
-      <div class="footer__contactUs__contacto">
-        <a href="tel:++987 876 765 76 577"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/tlf.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="tel:++987 876 765 76 577"><h4>Phone Numbrer</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="tel:++987 876 765 76 577"><h4>+987 876 765 76 577</h4></a>
+      <div class="contactUs__contacto">
+        <a href="tel:++987 876 765 76 577"><img class="contactUs__img" src="./resources/Iconos/tlf.png" alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="tel:++987 876 765 76 577">
+            <h4>Phone Numbrer</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="tel:++987 876 765 76 577">
+            <h4>+34 608 759 563</h4>
+          </a>
         </div>
       </div>
-      <div class="footer__contactUs__contacto">
-        <a href="mailto:info@hotelmiranda.com"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/email.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="mailto:info@hotelmiranda.com"><h4>Email</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="mailto:info@hotelmiranda.com"><h4>info@hotelmiranda.com</h4></a>
+      <div class="contactUs__contacto">
+        <a href="mailto:info@hotelmiranda.com"><img class="contactUs__img" src="./resources/Iconos/email.png"
+            alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="mailto:info@hotelmiranda.com">
+            <h4>Email</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="mailto:info@hotelmiranda.com">
+            <h4>raulmoretamartin@gmail.com</h4>
+          </a>
         </div>
       </div>
-      <div class="footer__contactUs__contacto">
-        <a href="https://g.page/oxygen-coworking?share"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/maps.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="https://g.page/oxygen-coworking?share"><h4>Location</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="https://g.page/oxygen-coworking?share"><h4>C. de la Princesa, 31, planta, 2ª, 28008 Madrid</h4></a>
+      <div class="contactUs__contacto">
+        <a href="https://g.page/oxygen-coworking?share"><img class="contactUs__img" src="./resources/Iconos/maps.png"
+            alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="https://g.page/oxygen-coworking?share">
+            <h4>Location</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="https://g.page/oxygen-coworking?share">
+            <h4>C. de la Princesa, 31, planta, 2ª, 28008 Madrid</h4>
+          </a>
         </div>
       </div>
     </div>
@@ -98,5 +409,9 @@
       <h6 class="footer__terms__enlace"><a href="">Terms of use</a> | <a href="">Privacy Enviromental Policy</a></h6>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./scripts/motor.js"></script>
 </body>
+
 </html>
