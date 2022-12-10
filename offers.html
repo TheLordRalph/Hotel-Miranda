@@ -1,38 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet"> 
-  
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/styles.css">
   <title>Hotel Miranda</title>
 </head>
+
 <body>
   <header class="header">
-    <div class="header__bar">
-      <img class="header__bar__menuLogo" src="resources/Iconos/menu.png" alt="">
+    <p class="header__text">We Make Your Feel Comfortable</p>
+    <div id="header" class="header__bar">
+      <div id="burger" class="header-burger">
+        <div id="burgerBar" class="bar"></div>
+      </div>
       <div class="logo">
         <h1 class="logo__logo">H</h1>
         <h1 class="logo__titulo">HOTEL<br><span>MIRANDA</span></h1>
       </div>
-      <div class="header__bar__menu displayNone">
-        <a href="/about.html" class="header__bar__menu__enlace">About Us</a>
-        <a href="/rooms.html" class="header__bar__menu__enlace">Rooms</a>
-        <a href="/offers.html" class="header__bar__menu__enlace">Offers</a>
-        <a href="/contact.html" class="header__bar__menu__enlace">Contact</a>
+      <div id="menuEnlaces" class="header__bar__menu displayNone">
+        <a href="./about.html" class="header__bar__menu__enlace">About Us</a>
+        <a href="./rooms.html" class="header__bar__menu__enlace">Rooms</a>
+        <a href="./offers.html" class="header__bar__menu__enlace">Offers</a>
+        <a href="./contact.html" class="header__bar__menu__enlace">Contact</a>
       </div>
-      <img class="header__bar__user" src="resources/Iconos/user.png" alt="">
-      <img class="header__bar__buscador" src="resources/Iconos/buscar.png" alt="">
+      <div class="header__container">
+        <img class="header__user" src="resources/Iconos/user.png" alt="">
+        <img class="header__buscador" src="resources/Iconos/buscar.png" alt="">
+      </div>
     </div>
   </header>
+
+  <section class="inicio inicio--noPaddingBottom">
+    <h5 class="inicio__descripcion">THE ULTIMATE LUXURY EXPERIENCE</h5>
+    <h1 class="inicio__titulo">Our Offers</h1>
+    <div class="inicio__etiqueta">
+      <h1 class="inicio__etiqueta__titulo">Home | <span>Offers</span></h1>
+    </div>
+  </section>
+
+  <section class="rooms">
+    <div class="rooms__card">
+      <img class="rooms__card__img rooms__card__img--roomDetail" src="./resources/Imagenes/room_02.jpg" alt="">
+      <div class="rooms__card__info rooms__card__info--roomDetail">
+        <h1 class="rooms__card__info__precio--oldPrice">$500<span>/Night</span></h1>
+        <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+      </div>
+      <section class="inicio inicio--bgNull inicio--roomDetail">
+        <h5 class="inicio__descripcion inicio__descripcion--black inicio__descripcion--roomDetail">DOUBLE BED</h5>
+        <h1 class="inicio__titulo inicio__titulo--black inicio__titulo--widthFitCon inicio__titulo--roomDetail">Luxury
+          Double Bed</h1>
+      </section>
+      <p class="inicio__texto inicio__texto--width">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis repellendus quasi rerum quo nesciunt dolor ipsa! Ut quis quibusdam rerum velit omnis, maxime itaque voluptas tempora sint. Ipsum, vitae sed?</p>
+      <div class="rooms rooms--flexWrap">
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_01.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Air conditioner</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_08.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">High speed WiFi</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_02.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Breakfast</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_09.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Kitchen</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_03.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Cleaning</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_10.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Shower</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_04.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Grocery</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_11.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Single bed</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_05.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Shop near</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_12.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Towels</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_06.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">24/7 Online Support</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_13.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Strong Locker</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_07.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Smart Security</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_14.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Expert Team</h1>
+        </div>
+      </div>
+      <div class="boton">
+        <h3 class="boton__titulo">Book Now</h3>
+      </div>
+    </div>
+    <div class="rooms__card">
+      <img class="rooms__card__img rooms__card__img--roomDetail" src="./resources/Imagenes/room_02.jpg" alt="">
+      <div class="rooms__card__info rooms__card__info--roomDetail">
+        <h1 class="rooms__card__info__precio--oldPrice">$500<span>/Night</span></h1>
+        <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+      </div>
+      <section class="inicio inicio--bgNull inicio--roomDetail">
+        <h5 class="inicio__descripcion inicio__descripcion--black inicio__descripcion--roomDetail">DOUBLE BED</h5>
+        <h1 class="inicio__titulo inicio__titulo--black inicio__titulo--widthFitCon inicio__titulo--roomDetail">Luxury
+          Double Bed</h1>
+      </section>
+      <p class="inicio__texto inicio__texto--width">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis repellendus quasi rerum quo nesciunt dolor ipsa! Ut quis quibusdam rerum velit omnis, maxime itaque voluptas tempora sint. Ipsum, vitae sed?</p>
+      <div class="rooms rooms--flexWrap">
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_01.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Air conditioner</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_08.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">High speed WiFi</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_02.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Breakfast</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_09.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Kitchen</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_03.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Cleaning</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_10.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Shower</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_04.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Grocery</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_11.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Single bed</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_05.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Shop near</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_12.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Towels</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_06.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">24/7 Online Support</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_13.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Strong Locker</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_07.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Smart Security</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_14.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Expert Team</h1>
+        </div>
+      </div>
+      <div class="boton">
+        <h3 class="boton__titulo">Book Now</h3>
+      </div>
+    </div>
+    <div class="rooms__card">
+      <img class="rooms__card__img rooms__card__img--roomDetail" src="./resources/Imagenes/room_02.jpg" alt="">
+      <div class="rooms__card__info rooms__card__info--roomDetail">
+        <h1 class="rooms__card__info__precio--oldPrice">$500<span>/Night</span></h1>
+        <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+      </div>
+      <section class="inicio inicio--bgNull inicio--roomDetail">
+        <h5 class="inicio__descripcion inicio__descripcion--black inicio__descripcion--roomDetail">DOUBLE BED</h5>
+        <h1 class="inicio__titulo inicio__titulo--black inicio__titulo--widthFitCon inicio__titulo--roomDetail">Luxury
+          Double Bed</h1>
+      </section>
+      <p class="inicio__texto inicio__texto--width">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis repellendus quasi rerum quo nesciunt dolor ipsa! Ut quis quibusdam rerum velit omnis, maxime itaque voluptas tempora sint. Ipsum, vitae sed?</p>
+      <div class="rooms rooms--flexWrap">
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_01.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Air conditioner</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_08.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">High speed WiFi</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_02.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Breakfast</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_09.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Kitchen</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_03.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Cleaning</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_10.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Shower</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_04.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Grocery</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_11.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Single bed</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_05.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Shop near</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_12.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Towels</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_06.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">24/7 Online Support</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_13.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Strong Locker</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_07.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Smart Security</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_14.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Expert Team</h1>
+        </div>
+      </div>
+      <div class="boton">
+        <h3 class="boton__titulo">Book Now</h3>
+      </div>
+    </div>
+    <div class="rooms__card">
+      <img class="rooms__card__img rooms__card__img--roomDetail" src="./resources/Imagenes/room_02.jpg" alt="">
+      <div class="rooms__card__info rooms__card__info--roomDetail">
+        <h1 class="rooms__card__info__precio--oldPrice">$500<span>/Night</span></h1>
+        <h1 class="rooms__card__info__precio">$345<span>/Night</span></h1>
+      </div>
+      <section class="inicio inicio--bgNull inicio--roomDetail">
+        <h5 class="inicio__descripcion inicio__descripcion--black inicio__descripcion--roomDetail">DOUBLE BED</h5>
+        <h1 class="inicio__titulo inicio__titulo--black inicio__titulo--widthFitCon inicio__titulo--roomDetail">Luxury
+          Double Bed</h1>
+      </section>
+      <p class="inicio__texto inicio__texto--width">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis repellendus quasi rerum quo nesciunt dolor ipsa! Ut quis quibusdam rerum velit omnis, maxime itaque voluptas tempora sint. Ipsum, vitae sed?</p>
+      <div class="rooms rooms--flexWrap">
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_01.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Air conditioner</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_08.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">High speed WiFi</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_02.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Breakfast</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_09.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Kitchen</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_03.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Cleaning</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_10.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Shower</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_04.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Grocery</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_11.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Single bed</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_05.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Shop near</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_12.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Towels</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_06.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">24/7 Online Support</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_13.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Strong Locker</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_07.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Smart Security</h1>
+        </div>
+        <div class="rooms__caracteristicas rooms__caracteristicas--roomDetail">
+          <img src="./resources/Iconos/caracteristica_roomDetail_14.png" alt="">
+          <h1 class="rooms__caracteristicas__titulo">Expert Team</h1>
+        </div>
+      </div>
+      <div class="boton">
+        <h3 class="boton__titulo">Book Now</h3>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="footer__info">
@@ -40,7 +359,9 @@
         <h1 class="logo__logo logo__logo--footer">H</h1>
         <h1 class="logo__titulo logo__titulo--footer">HOTEL<br><span>MIRANDA</span></h1>
       </div>
-      <p class="footer__info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id veritatis ullam, eius recusandae doloremque suscipit maxime, dicta hic aliquam rerum exercitationem libero laboriosam provident facere. Facilis corrupti asperiores maxime!</p>
+      <p class="footer__info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id veritatis
+        ullam, eius recusandae doloremque suscipit maxime, dicta hic aliquam rerum exercitationem libero laboriosam
+        provident facere. Facilis corrupti asperiores maxime!</p>
       <div class="rs">
         <a class="rs__logo" href="#"><img src="./resources/Iconos/facebook.png" alt="FaceBook"></a>
         <a class="rs__logo rs__logo--color" href="#"><img src="./resources/Iconos/twitter.png" alt="Twitter"></a>
@@ -53,42 +374,56 @@
     <div class="footer__services">
       <h1 class="footer__titulos">Service.</h1>
       <div class="footer__services__servicios">
-        <a href="#" class="footer__services__servicios__servicio">+ Restaurant & Bar</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Swimming Pool</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Wellness & Spa</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Restaurant</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Conference Room</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Coctail Party House</a>
+        <p class="footer__services__servicios__servicio">+ Resturent & Bar<br>
+          + Swimming Pool<br>
+          + Wellness & Spa<br>
+          + Restaurant<br>
+          + Conference Room<br>
+          + Coctail Party House</p>
       </div>
       <div class="footer__services__servicios">
-        <a href="#" class="footer__services__servicios__servicio">+ Gaming Zone</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Marrige Party</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Party Planning</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Tour Consultancy</a>
+        <p class="footer__services__servicios__servicio">+ Gaming Zone<br>
+          + Marrige Party<br>
+          + Party Planning<br>
+          + Tour Consultancy</p>
       </div>
     </div>
 
-    <div class="footer__contactUs">
+    <div class="contactUs">
       <h1 class="footer__titulos">Contact Us.</h1>
-      <div class="footer__contactUs__contacto">
-        <a href="tel:++987 876 765 76 577"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/tlf.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="tel:++987 876 765 76 577"><h4>Phone Numbrer</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="tel:++987 876 765 76 577"><h4>+987 876 765 76 577</h4></a>
+      <div class="contactUs__contacto">
+        <a href="tel:++987 876 765 76 577"><img class="contactUs__img" src="./resources/Iconos/tlf.png" alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="tel:++987 876 765 76 577">
+            <h4>Phone Numbrer</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="tel:++987 876 765 76 577">
+            <h4>+34 608 759 563</h4>
+          </a>
         </div>
       </div>
-      <div class="footer__contactUs__contacto">
-        <a href="mailto:info@hotelmiranda.com"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/email.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="mailto:info@hotelmiranda.com"><h4>Email</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="mailto:info@hotelmiranda.com"><h4>info@hotelmiranda.com</h4></a>
+      <div class="contactUs__contacto">
+        <a href="mailto:info@hotelmiranda.com"><img class="contactUs__img" src="./resources/Iconos/email.png"
+            alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="mailto:info@hotelmiranda.com">
+            <h4>Email</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="mailto:info@hotelmiranda.com">
+            <h4>raulmoretamartin@gmail.com</h4>
+          </a>
         </div>
       </div>
-      <div class="footer__contactUs__contacto">
-        <a href="https://g.page/oxygen-coworking?share"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/maps.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="https://g.page/oxygen-coworking?share"><h4>Location</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="https://g.page/oxygen-coworking?share"><h4>C. de la Princesa, 31, planta, 2ª, 28008 Madrid</h4></a>
+      <div class="contactUs__contacto">
+        <a href="https://g.page/oxygen-coworking?share"><img class="contactUs__img" src="./resources/Iconos/maps.png"
+            alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="https://g.page/oxygen-coworking?share">
+            <h4>Location</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="https://g.page/oxygen-coworking?share">
+            <h4>C. de la Princesa, 31, planta, 2ª, 28008 Madrid</h4>
+          </a>
         </div>
       </div>
     </div>
@@ -98,5 +433,9 @@
       <h6 class="footer__terms__enlace"><a href="">Terms of use</a> | <a href="">Privacy Enviromental Policy</a></h6>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./scripts/motor.js"></script>
 </body>
+
 </html>
