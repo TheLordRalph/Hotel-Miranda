@@ -647,7 +647,7 @@ body {
   position: relative;
   top: 20px;
   background-color: white;
-  z-index: 5;
+  z-index: 4;
   padding: 12px 24px;
   display: flex;
   justify-content: space-between;
@@ -681,6 +681,12 @@ body {
 .rooms .rooms__card .rooms__card__img--roomDetail {
   width: 90%;
   margin: 0 5%;
+}
+.rooms .rooms__card .rooms__card__img--offers {
+  width: 90%;
+  height: 162px;
+  display: block;
+  margin: auto;
 }
 .rooms .rooms__card .rooms__card__info {
   width: 90%;
@@ -754,7 +760,11 @@ body {
   position: static;
   margin-bottom: 16px;
 }
-
+.rooms .rooms__card .rooms__card__info--offers {
+  padding: 0;
+  position: relative;
+  margin-bottom: 16px;
+}
 .rooms--flexWrap {
   display: flex;
   flex-wrap: wrap;
