@@ -1401,6 +1401,11 @@ body {
   color: #777777;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 .footer {
   margin-top: 32px;
   background-image: url(../resources/Imagenes/FondoFooter.svg);

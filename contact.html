@@ -90,7 +90,30 @@
       </div>
       <h1 class="contactUs__fondo">03</h1>
     </div>
-    <img class="contactUs__map" src="./resources/Imagenes/map.png" alt="">
+    <div id="map">
+    </div>
+    <select id="map_comunidades" onchange="comunidadAutonoma(this)" name="" id="">
+      <option value="">Elige una Comunidad Autonoma</option>
+      <option value=0>Andalucía</option>
+      <option value=1>Aragón</option>
+      <option value=2>Asturias, Principado de</option>
+      <option value=3>Balears, Illes</option>
+      <option value=4>Canarias</option>
+      <option value=5>Castilla y León</option>
+      <option value=6>Castilla - La Mancha</option>
+      <option value=7>Cataluña / Catalunya</option>
+      <option value=8>Comunitat Valenciana</option>
+      <option value=9>Extremadura</option>
+      <option value=10>Galicia</option>
+      <option value=11>Madrid, Comunidad de</option>
+      <option value=12>Murcia, Región de</option>
+      <option value=13>Navarra, Comunidad Foral de</option>
+      <option value=14>País Vasco / Euskadi</option>
+      <option value=15>Rioja, La</option>
+      <option value=16>Ceuta</option>
+      <option value=17>Melilla</option>
+    </select>
+    
   </section>
 
   <section class="formulario">
@@ -190,6 +213,9 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./scripts/motor.js"></script>
+  <script src="./scripts/espana_comunidades.js"></script>
+  <script src="./scripts/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV8nkSbDhPVV99Lgxj-Bnuk7lYhgyF7vc&callback=initMap"></script>
 </body>
 
 </html>
