@@ -1,35 +1,33 @@
-const ubications = {
-  "ubications": [
+const ubications = [
     {
       "lat": 40.59083375388299,
       "lng": -4.146992963167832
     },
     {
-      "lat": 10.59083375388299,
-      "lng": -32.146992963167832
+      "lat": 40.60724803920952, 
+      "lng": -5.125777893955357
     },
     {
-      "lat": -2.59083375388299,
-      "lng": 10.146992963167832
+      "lat": 39.783466859865385,
+      "lng": -5.4816445287930895
     },
     {
-      "lat": -50.59083375388299,
-      "lng": 0.146992963167832
+      "lat": 36.61279629316437,
+      "lng": -4.502138964512427
     },
     {
-      "lat": 20.59083375388299,
-      "lng": 20.146992963167832
+      "lat": 43.345604607325264,
+      "lng": -5.130062173107846
     }
-  ]
-};
+];
 
 let comunidadAutonomaPolygon;
 let map, infoWindow;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 25.774, lng: -80.19 },
-    zoom: 6,
+    center: { lat: 40.4166, lng: -3.7040 },
+    zoom: 5,
   });
   infoWindow = new google.maps.InfoWindow();
 
@@ -43,15 +41,16 @@ function initMap() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          const pos = {
+          const actualPos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
 
-          infoWindow.setPosition(pos);
+          infoWindow.setPosition(actualPos);
           infoWindow.setContent("Location found.");
           infoWindow.open(map);
-          map.setCenter(pos);
+          map.setCenter(actualPos);
+          distance(actualPos);
         },
         () => {
           handleLocationError(true, infoWindow, map.getCenter());
@@ -62,121 +61,27 @@ function initMap() {
       handleLocationError(false, infoWindow, map.getCenter());
     }
   });
-
-  // Poligon
-  const poligon = [
-    {
-        "lng": -4.537353515625,
-        "lat": 43.39706523932025
-    },
-    {
-        "lng": -4.625244140625,
-        "lat": 43.25320494908846
-    },
-    {
-        "lng": -4.835186004638672,
-        "lat": 43.17351094244364
-    },
-    {
-        "lng": -4.76806640625,
-        "lat": 43.06086137134326
-    },
-    {
-        "lng": -4.626102447509766,
-        "lat": 43.037277735611376
-    },
-    {
-        "lng": -4.427490234375,
-        "lat": 43.06161389125079
-    },
-    {
-        "lng": -4.295654296875,
-        "lat": 42.97338078923806
-    },
-    {
-        "lng": -4.219264984130859,
-        "lat": 42.852183637398895
-    },
-    {
-        "lng": -3.9440917968749996,
-        "lat": 42.74701217318067
-    },
-    {
-        "lng": -3.801784515380859,
-        "lat": 42.811773603829344
-    },
-    {
-        "lng": -3.9660644531249996,
-        "lat": 42.91620643817353
-    },
-    {
-        "lng": -3.955249786376953,
-        "lat": 43.01343399741946
-    },
-    {
-        "lng": -3.7138938903808594,
-        "lat": 43.13331170781402
-    },
-    {
-        "lng": -3.570556640625,
-        "lat": 43.14909399920127
-    },
-    {
-        "lng": -3.4160614013671875,
-        "lat": 43.13306116240612
-    },
-    {
-        "lng": -3.409881591796875,
-        "lat": 43.248203680382346
-    },
-    {
-        "lng": -3.262939453125,
-        "lat": 43.297198404646366
-    },
-    {
-        "lng": -3.173675537109375,
-        "lat": 43.30119623257966
-    },
-    {
-        "lng": -3.1482696533203125,
-        "lat": 43.35114690203119
-    },
-    {
-        "lng": -3.27392578125,
-        "lat": 43.41302868475145
-    },
-    {
-        "lng": -3.44970703125,
-        "lat": 43.48481212891603
-    },
-    {
-        "lng": -3.5815429687499996,
-        "lat": 43.50872101129684
-    },
-    {
-        "lng": -4.053955078125,
-        "lat": 43.44494295526125
-    },
-    {
-        "lng": -4.32861328125,
-        "lat": 43.389081939117496
-    },
-    {
-        "lng": -4.537353515625,
-        "lat": 43.39706523932025
-    }
-  ];
+  
   // Construct the polygon.
   comunidadAutonomaPolygon = new google.maps.Polygon({
-    paths: poligon,
-    strokeColor: "#FF0000",
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
-    fillColor: "#FF0000",
-    fillOpacity: 0.35,
+    paths: null,
   });
 
-  bermudaTriangle.setMap(map);
+  // Markers
+  let marker;
+  ubications.map(ubication => (
+    marker = new google.maps.Marker({
+      position: ubication,
+      map: map,
+    })
+  ))
+}
+
+
+
+function callback(response, status) {
+  console.log(response);
+  console.log(status);
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -188,6 +93,8 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   );
   infoWindow.open(map);
 }
+
+
 
 window.initMap = initMap;
 
@@ -217,19 +124,32 @@ window.initMap = initMap;
 // }
 
 
+function distance(actualPos) {
+  var service = new google.maps.DistanceMatrixService();
+  service.getDistanceMatrix(
+  {
+    origins: [actualPos],
+    destinations: ubications,
+    travelMode: google.maps.TravelMode.DRIVING,
+    unitSystem: google.maps.UnitSystem.METRIC,
+    avoidHighways: false,
+    avoidTolls: false,
+  }, callback);
+}
+
 
 function comunidadAutonoma(e) {
   let value = parseInt(e.value);
-  let triangleCoords = [];
+  let comunidadesCoords = [];
   espanaComunidades[value].map(comunidad => (
     comunidad.map(cord => {
-      triangleCoords.push(cord);
+      comunidadesCoords.push(cord);
     })
   ))
 
   comunidadAutonomaPolygon.setMap(null);
   comunidadAutonomaPolygon = new google.maps.Polygon({
-    paths: triangleCoords,
+    paths: comunidadesCoords,
     strokeColor: "#FF0000",
     strokeOpacity: 0.8,
     strokeWeight: 2,

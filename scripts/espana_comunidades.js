@@ -12294,5 +12294,13 @@ var espanaComunidades = [
                 "lat": 35.31963
             }
         ]
+    ],
+    [
+        [
+            {
+                "lng": null,
+                "lat": null
+            }
+        ]
     ]
 ];
