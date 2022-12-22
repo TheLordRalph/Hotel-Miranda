@@ -1401,9 +1401,26 @@ body {
   color: #777777;
 }
 
-#map {
+.map {
   height: 400px;
   width: 100%;
+}
+
+.map__comunidades {
+  width: 100%;
+  margin: 2% 25%;
+}
+
+.map__distance {
+  background-color: #F8F8F8;
+  padding: 30px;
+}
+.map__distance h3 {
+  font-family: "Archivo", sans-serif;
+}
+.map__distance h4 {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
 }
 
 .footer {

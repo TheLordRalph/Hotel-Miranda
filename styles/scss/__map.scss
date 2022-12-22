@@ -1,4 +1,21 @@
-#map {
+.map {
     height: 400px;
     width: 100%;
+}
+
+.map__comunidades {
+    width: 100%;
+    margin: 2% 25%;
+}
+
+.map__distance {
+    background-color: #F8F8F8;
+    padding: 30px;
+    h3 {
+        font-family: $fontFamilyPrincipal
+    }
+    h4 {
+        font-family: $fontFamilyPrincipal;
+        color: #777777;
+    }
 }

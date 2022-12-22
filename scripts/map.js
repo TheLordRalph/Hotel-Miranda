@@ -1,28 +1,31 @@
 const ubications = [
     {
-      "lat": 40.59083375388299,
-      "lng": -4.146992963167832
+      lat: 40.59083375388299,
+      lng: -4.146992963167832
     },
     {
-      "lat": 40.60724803920952, 
-      "lng": -5.125777893955357
+      lat: 40.60724803920952, 
+      lng: -5.125777893955357
     },
     {
-      "lat": 39.783466859865385,
-      "lng": -5.4816445287930895
+      lat: 39.783466859865385,
+      lng: -5.4816445287930895
     },
     {
-      "lat": 36.61279629316437,
-      "lng": -4.502138964512427
+      lat: 36.61279629316437,
+      lng: -4.502138964512427
     },
     {
-      "lat": 43.345604607325264,
-      "lng": -5.130062173107846
+      lat: 43.345604607325264,
+      lng: -5.130062173107846
     }
 ];
 
 let comunidadAutonomaPolygon;
 let map, infoWindow;
+let actualPos;
+let marker = [];
+let activeMarks = [];
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -41,7 +44,7 @@ function initMap() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          const actualPos = {
+          actualPos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
@@ -68,20 +71,19 @@ function initMap() {
   });
 
   // Markers
-  let marker;
   ubications.map(ubication => (
-    marker = new google.maps.Marker({
+    marker.push(new google.maps.Marker({
       position: ubication,
       map: map,
-    })
+    })),
+    activeMarks.push(ubication)
   ))
+  console.log(activeMarks);
 }
-
-
 
 function callback(response, status) {
   console.log(response);
-  console.log(status);
+  cardsDistances(response);
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -94,49 +96,18 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
-
-
-window.initMap = initMap;
-
-
-
-// var origin1 = new google.maps.LatLng(55.930385, -3.118425);
-// var origin2 = 'Greenwich, England';
-// var destinationA = 'Stockholm, Sweden';
-// var destinationB = new google.maps.LatLng(50.087692, 14.421150);
-
-// var service = new google.maps.DistanceMatrixService();
-// service.getDistanceMatrix(
-//   {
-//     origins: [origin1, origin2],
-//     destinations: [destinationA, destinationB],
-//     travelMode: 'DRIVING',
-//     transitOptions: TransitOptions,
-//     drivingOptions: DrivingOptions,
-//     unitSystem: UnitSystem,
-//     avoidHighways: Boolean,
-//     avoidTolls: Boolean,
-//   }, callback);
-
-// function callback(response, status) {
-//   // See Parsing the Results for
-//   // the basics of a callback function.
-// }
-
-
 function distance(actualPos) {
   var service = new google.maps.DistanceMatrixService();
   service.getDistanceMatrix(
   {
     origins: [actualPos],
-    destinations: ubications,
+    destinations: activeMarks,
     travelMode: google.maps.TravelMode.DRIVING,
     unitSystem: google.maps.UnitSystem.METRIC,
     avoidHighways: false,
     avoidTolls: false,
   }, callback);
 }
-
 
 function comunidadAutonoma(e) {
   let value = parseInt(e.value);
@@ -157,5 +128,59 @@ function comunidadAutonoma(e) {
     fillOpacity: 0.35,
   });
 
+
+  activeMarks = [];
+  if (value !== 18) {
+    marker.map(mark => (
+      mark.setMap(null)
+    ))
+    for (var i = 0; i < marker.length; i++) {
+      if (google.maps.geometry.poly.containsLocation(marker[i].getPosition(), comunidadAutonomaPolygon)) {
+        marker[i].setMap(map);
+        activeMarks.push({ lat: marker[i].position.lat(), lng: marker[i].position.lng() })
+      }
+    }
+  } else {
+    marker.map(mark => (
+      mark.setMap(map),
+      activeMarks.push({ lat: mark.position.lat(), lng: mark.position.lng() })
+    ))
+  }
+  distance(actualPos);
+
+  
   comunidadAutonomaPolygon.setMap(map);
 }
+
+function cardsDistances(response) {
+  
+  const distanceContainer = document.getElementById("map_distances");
+  distanceContainer.innerHTML = '';
+  let divCardDistance;
+  let fromDistance;
+  let toDistance;
+  let timeDistance;
+
+  let result = response.rows[0].elements;
+  for (let i = 0; i < result.length; i++) {
+
+    divCardDistance = document.createElement("div");
+    divCardDistance.classList.add("map__distance");
+
+    fromDistance = document.createElement("h4");
+    toDistance = document.createElement("h4");
+    timeDistance = document.createElement("h3");
+
+    divCardDistance.appendChild(fromDistance);
+    divCardDistance.appendChild(toDistance);
+    divCardDistance.appendChild(timeDistance);
+    distanceContainer.appendChild(divCardDistance);
+
+    fromDistance.innerHTML = "From: " + response.originAddresses[0];
+    toDistance.innerHTML = "To: " + response.destinationAddresses[i];
+    timeDistance.innerHTML = result[i].duration.text + " (" + result[i].distance.text + ")";
+  }
+}
+
+
+window.initMap = initMap;
