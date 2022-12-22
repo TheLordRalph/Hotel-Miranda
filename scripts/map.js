@@ -24,6 +24,7 @@ const ubications = [
 let comunidadAutonomaPolygon;
 let map, infoWindow;
 let actualPos;
+var geocoder;
 let marker = [];
 let activeMarks = [];
 
@@ -32,6 +33,7 @@ function initMap() {
     center: { lat: 40.4166, lng: -3.7040 },
     zoom: 5,
   });
+  geocoder = new google.maps.Geocoder();
   infoWindow = new google.maps.InfoWindow();
 
   const locationButton = document.createElement("button");
@@ -148,7 +150,7 @@ function comunidadAutonoma(e) {
   }
   distance(actualPos);
 
-  
+
   comunidadAutonomaPolygon.setMap(map);
 }
 
@@ -180,6 +182,25 @@ function cardsDistances(response) {
     toDistance.innerHTML = "To: " + response.destinationAddresses[i];
     timeDistance.innerHTML = result[i].duration.text + " (" + result[i].distance.text + ")";
   }
+}
+
+function changeUbication() {
+  var address = document.getElementById('map_address').value;
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == 'OK') {
+      actualPos = {
+        lat: results[0].geometry.location.lat(),
+        lng: results[0].geometry.location.lng(),
+      };
+      infoWindow.setPosition(actualPos);
+      infoWindow.setContent("Location found.");
+      infoWindow.open(map);
+      map.setCenter(actualPos);
+      distance(actualPos);
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
 }
 
 
