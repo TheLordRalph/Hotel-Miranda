@@ -65,6 +65,38 @@
             }
         }
     }
+    .about__containerIcons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 345px;
+        margin: 50px auto 70px auto;
+    }
+    .about__caracteristica {
+        width: 158px;
+        height: 158px;
+        text-align: center;
+        .about__caracteristica__img {
+            margin: 20% 0 13px 0;
+        }
+        .about__caracteristica__tittle {
+            font-family: $fontFamilyPrincipal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+        }
+        .about__caracteristica__tittle--color {
+            color: white;
+        }
+    }
+    .about__caracteristica--backgroundC {
+        background-color: #BEAD8E;
+    }
+    .about__caracteristica--margin {
+        margin: 0 20px 20px 0;
+    }
 }
 
 

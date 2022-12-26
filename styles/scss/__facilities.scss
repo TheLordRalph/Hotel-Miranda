@@ -1,4 +1,5 @@
 .facilities {
+    padding-bottom: 47px;
     .facilities__facility {
         width: 375px;
         height: 370px;
@@ -6,6 +7,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 32px;
+        margin-bottom: 44px;
         .facilities__facility__numero {
             font-family: $fontFamilyPrincipal;
             font-weight: 700;
@@ -32,6 +34,9 @@
             text-align: start;
             margin-left: 35px;
         }
+        .facilities__facility__titulo--color {
+            color: white;
+        }
         .facilities__facility__description {
             font-family: $fontFamilyPrincipal;
             font-weight: 400;
@@ -42,7 +47,19 @@
             margin: 0 87px 43px 38px;
             
         }
+        .facilities__facility__description--color {
+            color: white;
+        }
     }
+    .facilities__facility--black {
+        background-color: #292929;
+    }
+}
+.facilities--black {
+    background-color: $colorPrincipal;
+}
+.facilities__container {
+    display: none;
 }
 
 

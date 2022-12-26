@@ -1,38 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet"> 
-  
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/styles.css">
   <title>Hotel Miranda</title>
 </head>
+
 <body>
   <header class="header">
-    <div class="header__bar">
-      <img class="header__bar__menuLogo" src="resources/Iconos/menu.png" alt="">
+    <p class="header__text">We Make Your Feel Comfortable</p>
+    <div id="header" class="header__bar">
+      <div id="burger" class="header-burger">
+        <div id="burgerBar" class="bar"></div>
+      </div>
       <div class="logo">
         <h1 class="logo__logo">H</h1>
         <h1 class="logo__titulo">HOTEL<br><span>MIRANDA</span></h1>
       </div>
-      <div class="header__bar__menu displayNone">
-        <a href="/about.html" class="header__bar__menu__enlace">About Us</a>
-        <a href="/rooms.html" class="header__bar__menu__enlace">Rooms</a>
-        <a href="/offers.html" class="header__bar__menu__enlace">Offers</a>
-        <a href="/contact.html" class="header__bar__menu__enlace">Contact</a>
+      <div id="menuEnlaces" class="header__bar__menu displayNone">
+        <a href="./about.html" class="header__bar__menu__enlace">About Us</a>
+        <a href="./rooms.html" class="header__bar__menu__enlace">Rooms</a>
+        <a href="./offers.html" class="header__bar__menu__enlace">Offers</a>
+        <a href="./contact.html" class="header__bar__menu__enlace">Contact</a>
       </div>
-      <img class="header__bar__user" src="resources/Iconos/user.png" alt="">
-      <img class="header__bar__buscador" src="resources/Iconos/buscar.png" alt="">
+      <div class="header__container">
+        <img class="header__user" src="resources/Iconos/user.png" alt="">
+        <img class="header__buscador" src="resources/Iconos/buscar.png" alt="">
+      </div>
     </div>
   </header>
+
+  <section class="inicio inicio--noPaddingBottom">
+    <h5 class="inicio__descripcion">THE ULTIMATE LUXURY EXPERIENCE</h5>
+    <h1 class="inicio__titulo">About Us</h1>
+    <div class="inicio__etiqueta">
+      <h1 class="inicio__etiqueta__titulo">Home | <span>About</span></h1>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="video video--noBackground video--padding">
+      <iframe class="video__iframe" width="100%" height="270"
+            src="https://www.youtube-nocookie.com/embed/Bu3Doe45lcU?start=25&end=75" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+      </iframe>
+      <h3 class="video__tittle">Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h3>
+    </div>
+    <div class="about__containerIcons">
+      <div class="about__caracteristica about__caracteristica--margin">
+        <img class="about__caracteristica__img" src="./resources/Iconos/about_02.png" alt="">
+        <h4 class="about__caracteristica__tittle">Breakfast</h4>
+      </div>
+      <div class="about__caracteristica about__caracteristica--backgroundC">
+        <img class="about__caracteristica__img" src="./resources/Iconos/about_01.png" alt="">
+        <h4 class="about__caracteristica__tittle about__caracteristica__tittle--color">Airport Pickup</h4>
+      </div>
+      <div class="about__caracteristica about__caracteristica--margin">
+        <img class="about__caracteristica__img" src="./resources/Iconos/about_03.png" alt="">
+        <h4 class="about__caracteristica__tittle">City Guide</h4>
+      </div>
+      <div class="about__caracteristica">
+        <img class="about__caracteristica__img" src="./resources/Iconos/about_04.png" alt="">
+        <h4 class="about__caracteristica__tittle">Luxury Room</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu menu--padding">
+    <img class="menu__imagen" src="./resources/Imagenes/menu_01.jpg" alt="">
+    <section class="inicio inicio--bgNull inicio--roomDetail">
+      <h5 class="inicio__descripcion inicio__descripcion--black inicio__descripcion--roomDetail">RESTAURANT</h5>
+      <h1 class="inicio__titulo inicio__titulo--black inicio__titulo--widthFitCon inicio__titulo--roomDetail">Get Restaurant Facilities & Many Other More</h1>
+      <p class="inicio__descripcion--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <div class="boton">
+        <h3 class="boton__titulo">Take a Tour</h3>
+      </div>
+    </section>
+  </section>
+
+  <section class="facilities facilities--black">
+    <section class="inicio inicio--bgNull inicio--sections inicio--noMarginLeft">
+      <h5 class="inicio__descripcion inicio__descripcion--center">FACILITIES</h5>
+      <h1 class="inicio__titulo inicio__titulo--center inicio__titulo--section">Core Features</h1>
+    </section>
+    <div class="swiper swiper-facilities">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--facilitiesBlack">
+          <div class="facilities__facility facilities__facility--black">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_01.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">01</h1>
+            <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Have High Rating</h1>
+            <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--facilitiesBlack">
+          <div class="facilities__facility facilities__facility--black">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_02.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">02</h1>
+            <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Quiet Hours</h1>
+            <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--facilitiesBlack">
+          <div class="facilities__facility facilities__facility--black">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_03.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">03</h1>
+            <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Best LOcation</h1>
+            <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--facilitiesBlack">
+          <div class="facilities__facility facilities__facility--black">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_04.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">04</h1>
+            <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Free Candellation</h1>
+            <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--facilitiesBlack">
+          <div class="facilities__facility facilities__facility--black">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_05.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">05</h1>
+            <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Payment Option</h1>
+            <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--facilitiesBlack">
+          <div class="facilities__facility facilities__facility--black">
+            <img class="facilities__facility__img" src="./resources/Iconos/facilities_06.png" alt="High Rating">
+            <h1 class="facilities__facility__numero">06</h1>
+            <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Special Offers</h1>
+            <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              expedita tenetur enim eius vero at iure.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="facilities__container">
+      <div class="facilities__facility facilities__facility--1 facilities__facility--black">
+        <img class="facilities__facility__img" src="./resources/Iconos/facilities_01.png" alt="High Rating">
+        <h1 class="facilities__facility__numero">01</h1>
+        <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Have High Rating</h1>
+        <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+          expedita tenetur enim eius vero at iure.</p>
+      </div>
+      <div class="facilities__facility facilities__facility--2 facilities__facility--black">
+        <img class="facilities__facility__img" src="./resources/Iconos/facilities_02.png" alt="High Rating">
+        <h1 class="facilities__facility__numero">02</h1>
+        <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Quiet Hours</h1>
+        <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+          expedita tenetur enim eius vero at iure.</p>
+      </div>
+      <div class="facilities__facility facilities__facility--3 facilities__facility--black">
+        <img class="facilities__facility__img" src="./resources/Iconos/facilities_03.png" alt="High Rating">
+        <h1 class="facilities__facility__numero">03</h1>
+        <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Best LOcation</h1>
+        <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+          expedita tenetur enim eius vero at iure.</p>
+      </div>
+      <div class="facilities__facility facilities__facility--4 facilities__facility--black">
+        <img class="facilities__facility__img" src="./resources/Iconos/facilities_04.png" alt="High Rating">
+        <h1 class="facilities__facility__numero">04</h1>
+        <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Free Candellation</h1>
+        <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+          expedita tenetur enim eius vero at iure.</p>
+      </div>
+      <div class="facilities__facility facilities__facility--5 facilities__facility--black">
+        <img class="facilities__facility__img" src="./resources/Iconos/facilities_05.png" alt="High Rating">
+        <h1 class="facilities__facility__numero">05</h1>
+        <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Payment Option</h1>
+        <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+          expedita tenetur enim eius vero at iure.</p>
+      </div>
+      <div class="facilities__facility facilities__facility--6 facilities__facility--black">
+        <img class="facilities__facility__img" src="./resources/Iconos/facilities_06.png" alt="High Rating">
+        <h1 class="facilities__facility__numero">06</h1>
+        <h1 class="facilities__facility__titulo facilities__facility__titulo--color">Special Offers</h1>
+        <p class="facilities__facility__description facilities__facility__description--color">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+          expedita tenetur enim eius vero at iure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="datos datos--backgroundC">
+    <section class="inicio inicio--bgNull inicio--sections inicio--paddTopMenu inicio--marginBottom36">
+      <h5 class="inicio__descripcion inicio__descripcion--black">COUNTER</h5>
+      <h1 class="inicio__titulo inicio__titulo--black inicio__titulo--widthFitCon inicio__titulo--section">Some Fun Facts</h1>
+    </section>
+    <div class="datos__container datos__container--counter">
+      <img class="datos__container__img datos__container__img--counter" src="./resources/Iconos/dato_05.png" alt="">
+      <h1 class="datos__container__titulo datos__container__titulo--counter">8000<br>
+        <span class="datos__container__descripcion datos__container__descripcion--counter">Happy Users</span>
+      </h1>
+      <img src="./resources/Iconos/arrowRight.png" alt="">
+    </div>
+    <div class="datos__container datos__container--counter">
+      <img class="datos__container__img datos__container__img--counter" src="./resources/Iconos/dato_06.png" alt="">
+      <h1 class="datos__container__titulo datos__container__titulo--counter">10M<br>
+        <span class="datos__container__descripcion datos__container__descripcion--counter">Reviews & Appriciate</span></h1>
+      <img src="./resources/Iconos/arrowRight.png" alt="">
+      </div>
+    <div class="datos__container datos__container--counter datos__container--noMargin">
+      <img class="datos__container__img datos__container__img--counter" src="./resources/Iconos/dato_07.png" alt="">
+      <h1 class="datos__container__titulo datos__container__titulo--counter">100<br><span
+          class="datos__container__descripcion datos__container__descripcion--counter">Country Coverage</span></h1>
+      <img src="./resources/Iconos/arrowRight.png" alt="">
+    </div>
+
+    <div class="swiper mySwiper swiper-about">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--about"><img src="./resources/Imagenes/menu_01.jpg" alt=""></div>
+        <div class="swiper-slide swiper-slide--about"><img src="./resources/Imagenes/menu_01.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="footer__info">
@@ -40,7 +246,9 @@
         <h1 class="logo__logo logo__logo--footer">H</h1>
         <h1 class="logo__titulo logo__titulo--footer">HOTEL<br><span>MIRANDA</span></h1>
       </div>
-      <p class="footer__info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id veritatis ullam, eius recusandae doloremque suscipit maxime, dicta hic aliquam rerum exercitationem libero laboriosam provident facere. Facilis corrupti asperiores maxime!</p>
+      <p class="footer__info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id veritatis
+        ullam, eius recusandae doloremque suscipit maxime, dicta hic aliquam rerum exercitationem libero laboriosam
+        provident facere. Facilis corrupti asperiores maxime!</p>
       <div class="rs">
         <a class="rs__logo" href="#"><img src="./resources/Iconos/facebook.png" alt="FaceBook"></a>
         <a class="rs__logo rs__logo--color" href="#"><img src="./resources/Iconos/twitter.png" alt="Twitter"></a>
@@ -53,42 +261,56 @@
     <div class="footer__services">
       <h1 class="footer__titulos">Service.</h1>
       <div class="footer__services__servicios">
-        <a href="#" class="footer__services__servicios__servicio">+ Restaurant & Bar</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Swimming Pool</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Wellness & Spa</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Restaurant</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Conference Room</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Coctail Party House</a>
+        <p class="footer__services__servicios__servicio">+ Resturent & Bar<br>
+          + Swimming Pool<br>
+          + Wellness & Spa<br>
+          + Restaurant<br>
+          + Conference Room<br>
+          + Coctail Party House</p>
       </div>
       <div class="footer__services__servicios">
-        <a href="#" class="footer__services__servicios__servicio">+ Gaming Zone</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Marrige Party</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Party Planning</a>
-        <a href="#" class="footer__services__servicios__servicio">+ Tour Consultancy</a>
+        <p class="footer__services__servicios__servicio">+ Gaming Zone<br>
+          + Marrige Party<br>
+          + Party Planning<br>
+          + Tour Consultancy</p>
       </div>
     </div>
 
-    <div class="footer__contactUs">
+    <div class="contactUs">
       <h1 class="footer__titulos">Contact Us.</h1>
-      <div class="footer__contactUs__contacto">
-        <a href="tel:++987 876 765 76 577"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/tlf.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="tel:++987 876 765 76 577"><h4>Phone Numbrer</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="tel:++987 876 765 76 577"><h4>+987 876 765 76 577</h4></a>
+      <div class="contactUs__contacto">
+        <a href="tel:++987 876 765 76 577"><img class="contactUs__img" src="./resources/Iconos/tlf.png" alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="tel:++987 876 765 76 577">
+            <h4>Phone Numbrer</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="tel:++987 876 765 76 577">
+            <h4>+34 608 759 563</h4>
+          </a>
         </div>
       </div>
-      <div class="footer__contactUs__contacto">
-        <a href="mailto:info@hotelmiranda.com"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/email.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="mailto:info@hotelmiranda.com"><h4>Email</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="mailto:info@hotelmiranda.com"><h4>info@hotelmiranda.com</h4></a>
+      <div class="contactUs__contacto">
+        <a href="mailto:info@hotelmiranda.com"><img class="contactUs__img" src="./resources/Iconos/email.png"
+            alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="mailto:info@hotelmiranda.com">
+            <h4>Email</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="mailto:info@hotelmiranda.com">
+            <h4>raulmoretamartin@gmail.com</h4>
+          </a>
         </div>
       </div>
-      <div class="footer__contactUs__contacto">
-        <a href="https://g.page/oxygen-coworking?share"><img class="footer__contactUs__contacto__img" src="./resources/Iconos/maps.png" alt=""></a>
-        <div class="footer__contactUs__contacto__informacion">
-          <a class="footer__contactUs__contacto__informacion__titulo" href="https://g.page/oxygen-coworking?share"><h4>Location</h4></a>
-          <a class="footer__contactUs__contacto__informacion__descripcion" href="https://g.page/oxygen-coworking?share"><h4>C. de la Princesa, 31, planta, 2ª, 28008 Madrid</h4></a>
+      <div class="contactUs__contacto">
+        <a href="https://g.page/oxygen-coworking?share"><img class="contactUs__img" src="./resources/Iconos/maps.png"
+            alt=""></a>
+        <div class="contactUs__informacion">
+          <a class="contactUs__informacion__titulo" href="https://g.page/oxygen-coworking?share">
+            <h4>Location</h4>
+          </a>
+          <a class="contactUs__informacion__descripcion" href="https://g.page/oxygen-coworking?share">
+            <h4>C. de la Princesa, 31, planta, 2ª, 28008 Madrid</h4>
+          </a>
         </div>
       </div>
     </div>
@@ -98,5 +320,9 @@
       <h6 class="footer__terms__enlace"><a href="">Terms of use</a> | <a href="">Privacy Enviromental Policy</a></h6>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./scripts/motor.js"></script>
 </body>
+
 </html>

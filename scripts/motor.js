@@ -76,7 +76,7 @@ var swiper3 = new Swiper(".swiper--square", {
 });
 
 
-// Swiper Rooms
+// Swiper Rooms.html
 
 var swiperRooms = new Swiper(".swiperRooms", {
   centeredSlides: true,
@@ -91,4 +91,14 @@ var swiperRooms = new Swiper(".swiperRooms", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   }
+});
+
+
+// Swiper Abous.html
+
+var swiper = new Swiper(".swiper-about", {
+  Navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

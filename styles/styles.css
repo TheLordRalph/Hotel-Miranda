@@ -373,6 +373,10 @@ body {
   margin-bottom: 83px;
 }
 
+.inicio--marginBottom36 {
+  margin-bottom: 36px;
+}
+
 @media (min-width: 1000px) {
   .inicio {
     padding-top: 178px;
@@ -600,6 +604,38 @@ body {
 .about .about__cards .abaout__cards__card .abaout__cards__card__descripcion--black {
   background-color: #222222;
   color: white;
+}
+.about .about__containerIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 345px;
+  margin: 50px auto 70px auto;
+}
+.about .about__caracteristica {
+  width: 158px;
+  height: 158px;
+  text-align: center;
+}
+.about .about__caracteristica .about__caracteristica__img {
+  margin: 20% 0 13px 0;
+}
+.about .about__caracteristica .about__caracteristica__tittle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+.about .about__caracteristica .about__caracteristica__tittle--color {
+  color: white;
+}
+.about .about__caracteristica--backgroundC {
+  background-color: #BEAD8E;
+}
+.about .about__caracteristica--margin {
+  margin: 0 20px 20px 0;
 }
 
 @media (min-width: 1000px) {
@@ -843,12 +879,21 @@ body {
   padding: 0 5%;
 }
 
+.swiper-slide--facilitiesBlack {
+  background-color: #222222;
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.swiper-slide--about {
+  padding: 0 20px;
+  height: 230px;
 }
 
 .swiper-button-next--custom, .swiper-button-prev--custom {
@@ -959,6 +1004,22 @@ body {
 .video .video__fondo {
   display: none;
 }
+.video .video__tittle {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -1.16px;
+}
+
+.video--noBackground {
+  background: none;
+}
+
+.video--padding {
+  padding: 60px 20px 0 20px;
+}
 
 @media (min-width: 1000px) {
   .video {
@@ -984,6 +1045,9 @@ body {
     height: 41.4rem;
   }
 }
+.facilities {
+  padding-bottom: 47px;
+}
 .facilities .facilities__facility {
   width: 375px;
   height: 370px;
@@ -991,6 +1055,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 32px;
+  margin-bottom: 44px;
 }
 .facilities .facilities__facility .facilities__facility__numero {
   font-family: "Archivo", sans-serif;
@@ -1020,6 +1085,9 @@ body {
   text-align: start;
   margin-left: 35px;
 }
+.facilities .facilities__facility .facilities__facility__titulo--color {
+  color: white;
+}
 .facilities .facilities__facility .facilities__facility__description {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -1028,6 +1096,20 @@ body {
   text-align: start;
   color: #777777;
   margin: 0 87px 43px 38px;
+}
+.facilities .facilities__facility .facilities__facility__description--color {
+  color: white;
+}
+.facilities .facilities__facility--black {
+  background-color: #292929;
+}
+
+.facilities--black {
+  background-color: #222222;
+}
+
+.facilities__container {
+  display: none;
 }
 
 @media (min-width: 1000px) {
@@ -1115,6 +1197,14 @@ body {
 .menu .menu__imagenes {
   display: none;
 }
+.menu .menu__imagen {
+  width: 100%;
+  padding: 20px;
+}
+
+.menu--padding {
+  padding: 0 20px;
+}
 
 @media (min-width: 1000px) {
   .menu .menu__img {
@@ -1188,10 +1278,23 @@ body {
   height: 80px;
   margin-bottom: 50px;
 }
+.datos .datos__container .datos__container__img--counter {
+  margin: 0;
+}
 .datos .datos__container .datos__container__titulo {
   font-size: 60px;
   line-height: 21px;
   color: white;
+}
+.datos .datos__container .datos__container__titulo--counter {
+  color: #222222;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 35px;
+  letter-spacing: -1.8px;
+  margin: 0 auto 0 14px;
+  text-align: start;
 }
 .datos .datos__container .datos__container__plus {
   font-size: 14px;
@@ -1202,8 +1305,27 @@ body {
   font-size: 16px;
   color: #999999;
 }
+.datos .datos__container .datos__container__descripcion--counter {
+  color: #777777;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+.datos .datos__container--counter {
+  display: flex;
+  padding: 25px 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  margin-bottom: 16px;
+}
 .datos .datos__container--noMargin {
   margin: 0;
+}
+
+.datos--backgroundC {
+  background-color: white;
 }
 
 @media (min-width: 1000px) {

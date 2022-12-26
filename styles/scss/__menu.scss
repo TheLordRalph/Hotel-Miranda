@@ -43,6 +43,13 @@
     .menu__imagenes{
         display: none;
     }
+    .menu__imagen {
+        width: 100%;
+        padding: 20px;
+    }
+}
+.menu--padding {
+    padding: 0 20px;
 }
 
 
