@@ -1,25 +1,5 @@
-const ubications = [
-    {
-      lat: 40.59083375388299,
-      lng: -4.146992963167832
-    },
-    {
-      lat: 40.60724803920952, 
-      lng: -5.125777893955357
-    },
-    {
-      lat: 39.783466859865385,
-      lng: -5.4816445287930895
-    },
-    {
-      lat: 36.61279629316437,
-      lng: -4.502138964512427
-    },
-    {
-      lat: 43.345604607325264,
-      lng: -5.130062173107846
-    }
-];
+let ubicationsMarks = ubications;
+console.log(ubicationsMarks);
 
 let comunidadAutonomaPolygon;
 let map, infoWindow;
@@ -27,6 +7,7 @@ let actualPos;
 var geocoder;
 let marker = [];
 let activeMarks = [];
+let cluster;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -35,6 +16,7 @@ function initMap() {
   });
   geocoder = new google.maps.Geocoder();
   infoWindow = new google.maps.InfoWindow();
+  cluster = new markerClusterer.MarkerClusterer({ map, marker });
 
   const locationButton = document.createElement("button");
 
@@ -73,19 +55,14 @@ function initMap() {
   });
 
   // Markers
-  ubications.map(ubication => (
+  ubicationsMarks.map(ubication => (
     marker.push(new google.maps.Marker({
       position: ubication,
       map: map,
-    })),
-    activeMarks.push(ubication)
+    }))
+    //activeMarks.push(ubication)
   ))
-  console.log(activeMarks);
-}
-
-function callback(response, status) {
-  console.log(response);
-  cardsDistances(response);
+  cluster.addMarkers(marker);
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -111,6 +88,10 @@ function distance(actualPos) {
   }, callback);
 }
 
+function callback(response, status) {
+  cardsDistances(response);
+}
+
 function comunidadAutonoma(e) {
   let value = parseInt(e.value);
   let comunidadesCoords = [];
@@ -132,21 +113,24 @@ function comunidadAutonoma(e) {
 
 
   activeMarks = [];
+  cluster.clearMarkers();
   if (value !== 18) {
-    marker.map(mark => (
-      mark.setMap(null)
-    ))
+    // marker.map(mark => (
+    //   mark.setMap(null)
+    // ))
     for (var i = 0; i < marker.length; i++) {
       if (google.maps.geometry.poly.containsLocation(marker[i].getPosition(), comunidadAutonomaPolygon)) {
-        marker[i].setMap(map);
-        activeMarks.push({ lat: marker[i].position.lat(), lng: marker[i].position.lng() })
+        //marker[i].setMap(map);
+        cluster.addMarkers([marker[i]]);
+        //activeMarks.push({ lat: marker[i].position.lat(), lng: marker[i].position.lng() })
       }
     }
   } else {
-    marker.map(mark => (
-      mark.setMap(map),
-      activeMarks.push({ lat: mark.position.lat(), lng: mark.position.lng() })
-    ))
+    cluster.addMarkers(marker);
+    // marker.map(mark => (
+    //   mark.setMap(map)
+    //   //activeMarks.push({ lat: mark.position.lat(), lng: mark.position.lng() })
+    // ))
   }
   distance(actualPos);
 
