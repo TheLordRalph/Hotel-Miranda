@@ -1,5 +1,4 @@
 let ubicationsMarks = ubications;
-console.log(ubicationsMarks);
 
 let comunidadAutonomaPolygon;
 let map, infoWindow;
@@ -60,7 +59,6 @@ function initMap() {
       position: ubication,
       map: map,
     }))
-    //activeMarks.push(ubication)
   ))
   cluster.addMarkers(marker);
 }
@@ -115,22 +113,13 @@ function comunidadAutonoma(e) {
   activeMarks = [];
   cluster.clearMarkers();
   if (value !== 18) {
-    // marker.map(mark => (
-    //   mark.setMap(null)
-    // ))
     for (var i = 0; i < marker.length; i++) {
       if (google.maps.geometry.poly.containsLocation(marker[i].getPosition(), comunidadAutonomaPolygon)) {
-        //marker[i].setMap(map);
         cluster.addMarkers([marker[i]]);
-        //activeMarks.push({ lat: marker[i].position.lat(), lng: marker[i].position.lng() })
       }
     }
   } else {
     cluster.addMarkers(marker);
-    // marker.map(mark => (
-    //   mark.setMap(map)
-    //   //activeMarks.push({ lat: mark.position.lat(), lng: mark.position.lng() })
-    // ))
   }
   distance(actualPos);
 
